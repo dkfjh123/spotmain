@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>SPOT | 검증된 맛집의 전용상품으로 독립 브랜드 성공 지원</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="프랜차이즈가 아닌, 검증된 맛집의 전용상품과 운영 노하우를 공급하여 독립 브랜드의 성공을 지원하는 솔루션 제공자 SPOT">
+    <meta name="keywords" content="SPOT, 식자재, 창업, 외식업, 프랜차이즈 대안, 독립 브랜드, 전용상품">
+    <meta name="author" content="SPOT">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SPOT | System Provider of Total Solution">
+    <meta property="og:description" content="검증된 맛집의 전용상품과 운영 노하우로 독립 브랜드의 성공을 지원합니다.">
+    <meta property="og:image" content="spot-assets/SPOT_LOGO_square.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SPOT | System Provider of Total Solution">
+    <meta name="twitter:description" content="검증된 맛집의 전용상품과 운영 노하우로 독립 브랜드의 성공을 지원합니다.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="spot-assets/SPOT_LOGO_square.png">
+    <link rel="apple-touch-icon" href="spot-assets/SPOT_LOGO_square.png">
+
+    <!-- Theme Color for Mobile -->
+    <meta name="theme-color" content="#2563eb">
+
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-white text-zinc-900 overflow-x-hidden font-pretendard">
+
+    <!-- Global Cinematic Background - Hidden on Mobile for Performance -->
+    <div class="fixed inset-0 z-0 pointer-events-none overflow-hidden hidden md:block">
+        <div class="absolute inset-0 bg-white/90 z-10 backdrop-blur-[2px]"></div>
+        <div class="grid grid-cols-3 gap-4 opacity-20 transform -rotate-12 scale-150 animate-slow-pan">
+            <img src="spot-assets/제주산방_001.jpg" alt="" class="w-full h-96 object-cover rounded-3xl grayscale" loading="lazy">
+            <img src="spot-assets/고기국수 사진2.jpg" alt="" class="w-full h-96 object-cover rounded-3xl grayscale" loading="lazy">
+            <img src="spot-assets/산방만두-고기5개 (1) (1).jpg" alt="" class="w-full h-96 object-cover rounded-3xl grayscale" loading="lazy">
+            <img src="spot-assets/김치찌개 (4).JPG" alt="" class="w-full h-96 object-cover rounded-3xl grayscale" loading="lazy">
+            <img src="spot-assets/제주산방_001.jpg" alt="" class="w-full h-96 object-cover rounded-3xl grayscale" loading="lazy">
+            <img src="spot-assets/고기국수 사진2.jpg" alt="" class="w-full h-96 object-cover rounded-3xl grayscale" loading="lazy">
+        </div>
+    </div>
+
+    <!-- DoorDash Style Sidebar -->
+    <nav id="sidebar"
+        class="fixed left-0 top-0 h-full w-64 border-r border-zinc-100 bg-white z-50 transition-all duration-300 transform -translate-x-full lg:translate-x-0">
+        <div class="p-8 flex flex-col h-full">
+            <div class="mb-12">
+                <h1 class="text-3xl font-black tracking-tighter text-blue-600">SPOT.</h1>
+                <p class="text-[10px] text-zinc-400 font-bold tracking-widest uppercase mt-1">System Provider</p>
+            </div>
+
+            <ul class="flex-grow space-y-1">
+                <li><a href="#hero"
+                        class="nav-link flex items-center gap-3 p-3 rounded-xl transition-all font-semibold text-zinc-500 hover:text-blue-600 active-nav"><i
+                            data-lucide="home" class="w-4 h-4"></i> Home</a></li>
+                <li><a href="#story"
+                        class="nav-link flex items-center gap-3 p-3 rounded-xl transition-all font-semibold text-zinc-500 hover:text-blue-600"><i
+                            data-lucide="book-open" class="w-4 h-4"></i> 브랜드 스토리</a></li>
+                <li><a href="#weapons"
+                        class="nav-link flex items-center gap-3 p-3 rounded-xl transition-all font-semibold text-zinc-500 hover:text-blue-600"><i
+                            data-lucide="shield" class="w-4 h-4"></i> 3대 무기</a></li>
+                <li><a href="#personas"
+                        class="nav-link flex items-center gap-3 p-3 rounded-xl transition-all font-semibold text-zinc-500 hover:text-blue-600"><i
+                            data-lucide="target" class="w-4 h-4"></i> 3대 솔루션</a></li>
+                <li><a href="#catalog"
+                        class="nav-link flex items-center gap-3 p-3 rounded-xl transition-all font-semibold text-zinc-500 hover:text-blue-600"><i
+                            data-lucide="lock" class="w-4 h-4"></i> 시크릿 카탈로그</a></li>
+                <li><a href="#process"
+                        class="nav-link flex items-center gap-3 p-3 rounded-xl transition-all font-semibold text-zinc-500 hover:text-blue-600"><i
+                            data-lucide="git-pull-request" class="w-4 h-4"></i> 상담 및 절차</a></li>
+                <li><a href="#faq"
+                        class="nav-link flex items-center gap-3 p-3 rounded-xl transition-all font-semibold text-zinc-500 hover:text-blue-600"><i
+                            data-lucide="help-circle" class="w-4 h-4"></i> 자주 묻는 질문</a></li>
+            </ul>
+
+            <div class="mt-auto">
+                <button onclick="openModal()"
+                    class="w-full bg-blue-600 text-white py-4 rounded-2xl font-bold text-sm shadow-xl shadow-blue-100 hover:bg-blue-700 transition-all transform hover:-translate-y-1">
+                    파트너 신청하기
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Header -->
+    <header
+        class="lg:hidden fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md border-b border-zinc-100 p-4 flex justify-between items-center z-40">
+        <h1 class="text-2xl font-black text-blue-600 tracking-tighter">SPOT.</h1>
+        <button id="menuToggle" class="p-2"><i data-lucide="menu"></i></button>
+    </header>
+
+    <main class="lg:ml-64 min-h-screen relative z-10 w-full overflow-x-hidden">
+
+        <!-- Background Noise & Filters - Hidden on Mobile -->
+        <svg class="fixed top-0 left-0 w-full h-full opacity-40 pointer-events-none z-0 mix-blend-multiply hidden md:block" aria-hidden="true">
+            <filter id="noise">
+                <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch" />
+            </filter>
+            <rect width="100%" height="100%" filter="url(#noise)" />
+        </svg>
+
+        <!-- Navigation - Hidden on Mobile (uses sidebar) -->
+        <nav class="absolute top-0 left-0 w-full p-6 justify-between items-center z-40 hidden lg:flex" aria-label="Main navigation">
+            <div class="text-2xl font-black tracking-tight" style="font-family: 'DM Serif Display', serif;">SPOT.</div>
+            <button onclick="openModal()"
+                class="px-6 py-3 border-2 border-black rounded-full text-sm font-bold hover:bg-black hover:text-white transition-colors uppercase tracking-wider"
+                aria-label="파트너 신청하기">
+                파트너 신청
+            </button>
+        </nav>
+
+        <div class="relative">
+
+            <!-- Hero Section (Clean Light Theme) -->
+            <section id="hero"
+                class="relative min-h-screen flex flex-col items-center justify-center pt-24 md:pt-32 pb-16 md:pb-20 px-4 overflow-hidden">
+                <div class="absolute inset-0 z-0">
+                    <!-- Video hidden on mobile for performance -->
+                    <video autoplay loop muted playsinline class="w-full h-full object-cover opacity-20 hidden md:block">
+                        <source src="spot-assets/SPOT_HERO.mp4" type="video/mp4">
+                    </video>
+                    <div class="absolute inset-0 bg-gradient-to-b from-white/90 via-white/80 to-white/90"></div>
+                </div>
+                <div class="max-w-5xl mx-auto text-center animate-fade-in-up relative z-10">
+                    <span
+                        class="inline-block py-1 px-3 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-[10px] md:text-sm font-bold tracking-widest uppercase mb-4 md:mb-6">
+                        System Provider of Total Solution
+                    </span>
+                    <h1
+                        class="text-4xl md:text-6xl lg:text-8xl font-black leading-[1.1] mb-6 md:mb-8 tracking-tight text-zinc-900">
+                        프랜차이즈를 넘어,<br>
+                        우리동네 <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400">명소</span>를
+                        만들다
+                    </h1>
+                    <p
+                        class="text-base md:text-xl lg:text-2xl font-medium text-zinc-500 leading-relaxed max-w-3xl mx-auto break-keep">
+                        자율 100% 운영.<br class="block md:hidden">
+                        SPOT의 <span class="text-zinc-900 font-semibold">검증된 맛집의 전용상품</span>과 운영 시스템으로<br
+                            class="hidden md:block">
+                        <span class="text-zinc-900 font-bold decoration-blue-500 decoration-4 underline-offset-4">'내
+                            브랜드'</span>의 경쟁력을 완성하세요.
+                    </p>
+
+                    <!-- 3대 핵심 가치 칩 -->
+                    <div class="mt-8 flex flex-wrap justify-center gap-3">
+                        <span class="px-4 py-2 bg-zinc-100 rounded-full text-sm font-bold text-zinc-700">전용 식자재</span>
+                        <span class="px-4 py-2 bg-zinc-100 rounded-full text-sm font-bold text-zinc-700">운영 매뉴얼</span>
+                        <span class="px-4 py-2 bg-zinc-100 rounded-full text-sm font-bold text-zinc-700">마케팅 툴킷</span>
+                    </div>
+
+                    <div class="mt-10 flex flex-col md:flex-row gap-4 justify-center items-center">
+                        <button onclick="openModal()"
+                            class="group relative inline-flex items-center gap-3 px-10 py-5 bg-blue-600 text-white text-xl font-bold rounded-full overflow-hidden transition-all hover:bg-blue-700 hover:scale-105 shadow-2xl shadow-blue-500/20">
+                            <span>파트너십 무료 상담</span>
+                            <i data-lucide="arrow-right"
+                                class="w-6 h-6 group-hover:translate-x-1 transition-transform"></i>
+                        </button>
+                        <a href="#story"
+                            class="text-zinc-400 hover:text-zinc-900 font-bold underline underline-offset-4 transition-colors">
+                            SPOT 스토리 보기
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <!-- Brand Story Section -->
+            <section id="story" class="py-32 px-8 lg:px-24 border-t border-zinc-100">
+                <div class="max-w-5xl mx-auto">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                        <div class="space-y-8">
+                            <span class="text-blue-600 font-black tracking-widest text-xs uppercase">Philosophy</span>
+                            <h2 class="text-4xl font-bold leading-snug">검증된 맛집의 노하우를<br>당신의 브랜드에 이식합니다.</h2>
+                            <div class="space-y-6 text-zinc-500 text-lg leading-relaxed">
+                                <p>100여 개 매장을 운영하며 쌓아온 노하우. 맛집의 비결은 단순히 레시피가 아니라, 검증된 식자재와 체계적인 운영 시스템에 있습니다.</p>
+                                <p
+                                    class="font-bold text-zinc-900 bg-zinc-50 p-6 rounded-2xl border-l-4 border-blue-600">
+                                    "검증된 맛집의 전용상품과 노하우로<br>독립 브랜드의 성공을 지원하는 솔루션 제공자입니다."
+                                </p>
+                                <p>본점·직영점과 동일한 단가로 전용 식자재를 공급하고, 10년 넘게 검증된 운영 노하우를 전수합니다. 당신의 브랜드가 우리동네 명소로 자리잡을 수 있도록
+                                    함께합니다.</p>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <img src="spot-assets/제주산방_001.jpg" alt="제주산방 매장"
+                                class="rounded-[40px] shadow-2xl grayscale object-cover h-[400px] md:h-[500px] w-full" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 문제제기 섹션: Why SPOT? -->
+            <section class="py-32 px-8 lg:px-24 bg-zinc-900 text-white">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-16">
+                        <span class="text-blue-400 font-black tracking-widest text-xs uppercase">Why SPOT?</span>
+                        <h2 class="text-4xl font-bold mt-4 mb-6">프랜차이즈와 개인창업,<br>두 가지 장점만 가져가면 어떨까요?</h2>
+                        <p class="text-zinc-400 text-lg max-w-3xl mx-auto">각각의 장점은 분명하지만, 단점도 존재합니다. SPOT은 양쪽의 장점만을 결합한
+                            새로운 방식을 제안합니다.</p>
+                    </div>
+
+                    <!-- 비교 테이블 -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                        <!-- 프랜차이즈 -->
+                        <div class="bg-zinc-800 p-8 rounded-3xl">
+                            <h3 class="text-xl font-bold mb-6 text-zinc-300">프랜차이즈</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start gap-3">
+                                    <i data-lucide="check" class="w-5 h-5 text-green-400 mt-0.5"></i>
+                                    <span class="text-zinc-300">검증된 시스템과 매뉴얼</span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i data-lucide="check" class="w-5 h-5 text-green-400 mt-0.5"></i>
+                                    <span class="text-zinc-300">안정적인 물류 공급망</span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i data-lucide="x" class="w-5 h-5 text-red-400 mt-0.5"></i>
+                                    <span class="text-zinc-500">높은 가맹비와 로열티</span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i data-lucide="x" class="w-5 h-5 text-red-400 mt-0.5"></i>
+                                    <span class="text-zinc-500">운영 자율성 제한</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SPOT -->
+                        <div class="bg-blue-600 p-8 rounded-3xl relative overflow-hidden">
+                            <div class="absolute top-4 right-4">
+                                <span class="px-3 py-1 bg-white/20 rounded-full text-xs font-bold">BEST</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-6">SPOT</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start gap-3">
+                                    <i data-lucide="check" class="w-5 h-5 text-white mt-0.5"></i>
+                                    <span>검증된 시스템과 매뉴얼</span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i data-lucide="check" class="w-5 h-5 text-white mt-0.5"></i>
+                                    <span>검증된 물류·제조사 연결</span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i data-lucide="check" class="w-5 h-5 text-white mt-0.5"></i>
+                                    <span>100% 자율 운영</span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i data-lucide="check" class="w-5 h-5 text-white mt-0.5"></i>
+                                    <span>내 브랜드 구축</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 개인창업 -->
+                        <div class="bg-zinc-800 p-8 rounded-3xl">
+                            <h3 class="text-xl font-bold mb-6 text-zinc-300">개인창업</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start gap-3">
+                                    <i data-lucide="check" class="w-5 h-5 text-green-400 mt-0.5"></i>
+                                    <span class="text-zinc-300">100% 자율 운영</span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i data-lucide="check" class="w-5 h-5 text-green-400 mt-0.5"></i>
+                                    <span class="text-zinc-300">내 브랜드 구축</span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i data-lucide="x" class="w-5 h-5 text-red-400 mt-0.5"></i>
+                                    <span class="text-zinc-500">모든 것을 혼자 해결</span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i data-lucide="x" class="w-5 h-5 text-red-400 mt-0.5"></i>
+                                    <span class="text-zinc-500">검증되지 않은 거래처</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <p class="text-xl font-bold text-white mb-2">SPOT은 자율적으로 내 브랜드를 만들어가는 여정을 돕습니다.</p>
+                        <p class="text-zinc-400">프랜차이즈의 시스템 + 개인창업의 자유로움, 두 마리 토끼를 잡으세요.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 신뢰할 수 있는 파트너 섹션 -->
+            <section class="py-32 px-8 lg:px-24">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-16">
+                        <span class="text-blue-600 font-black tracking-widest text-xs uppercase">Trusted Partners</span>
+                        <h2 class="text-4xl font-bold mt-4 mb-6">물류사, 제조사...<br>과연 믿을 만한 곳을 어떻게 찾을까요?</h2>
+                        <p class="text-zinc-500 text-lg max-w-3xl mx-auto">
+                            SPOT은 100여 곳의 매장을 운영·관리하며 수년간 제조사, 물류사와 함께 일해왔습니다.<br>
+                            검증된 파트너만을 자신 있게 연결해 드립니다.
+                        </p>
+                    </div>
+
+                    <!-- 차별점 강조 -->
+                    <div class="bg-blue-50 p-8 lg:p-12 rounded-[40px] mb-16">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                            <div class="space-y-6">
+                                <h3 class="text-2xl font-bold text-zinc-900">일반 범용상품이 아닌,<br>직영점에서 사용하는 <span
+                                        class="text-blue-600">'전용상품'</span></h3>
+                                <p class="text-zinc-600 leading-relaxed">
+                                    우리는 시중에서 누구나 살 수 있는 범용상품만 취급하지 않습니다.
+                                    본점·직영점에서 직접 사용하는 <strong>전용상품</strong>을 통해
+                                    공동물류·공동제조의 장점만을 가져가는 구조로 당신의 브랜드 경쟁력을 만듭니다.
+                                </p>
+                                <div class="flex flex-wrap gap-3">
+                                    <span
+                                        class="px-4 py-2 bg-white rounded-full text-sm font-bold text-zinc-700 shadow-sm">공동
+                                        물류</span>
+                                    <span
+                                        class="px-4 py-2 bg-white rounded-full text-sm font-bold text-zinc-700 shadow-sm">공동
+                                        제조</span>
+                                    <span
+                                        class="px-4 py-2 bg-white rounded-full text-sm font-bold text-zinc-700 shadow-sm">본점
+                                        동일 단가</span>
+                                </div>
+                            </div>
+                            <div class="bg-white p-8 rounded-3xl shadow-lg relative overflow-hidden">
+                                <!-- 상단 일러스트 -->
+                                <div class="flex justify-center mb-4">
+                                    <img src="spot-assets/SPOT_Approval Pose.png" alt="SPOT 협력"
+                                        class="w-48 h-48 object-contain -mb-4" loading="lazy">
+                                </div>
+                                <h4 class="font-bold text-zinc-900 mb-4 text-center">상호 윈-윈 구조</h4>
+                                <div class="space-y-4 text-sm text-zinc-600">
+                                    <div class="flex items-center gap-3 bg-zinc-50 p-3 rounded-xl">
+                                        <div
+                                            class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                            <i data-lucide="store" class="w-5 h-5 text-blue-600"></i>
+                                        </div>
+                                        <div>
+                                            <p class="font-bold text-zinc-900">파트너 사장님</p>
+                                            <p class="text-xs">검증된 거래처와 전용상품으로 경쟁력 확보</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-center">
+                                        <i data-lucide="arrow-down-up" class="w-5 h-5 text-blue-400"></i>
+                                    </div>
+                                    <div class="flex items-center gap-3 bg-blue-600 p-3 rounded-xl text-white">
+                                        <div
+                                            class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
+                                            <i data-lucide="link" class="w-5 h-5 text-white"></i>
+                                        </div>
+                                        <div>
+                                            <p class="font-bold">SPOT</p>
+                                            <p class="text-xs text-blue-100">양측을 연결, 동일 서비스 품질 보장</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-center">
+                                        <i data-lucide="arrow-down-up" class="w-5 h-5 text-blue-400"></i>
+                                    </div>
+                                    <div class="flex items-center gap-3 bg-zinc-50 p-3 rounded-xl">
+                                        <div
+                                            class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                            <i data-lucide="factory" class="w-5 h-5 text-blue-600"></i>
+                                        </div>
+                                        <div>
+                                            <p class="font-bold text-zinc-900">제조사·물류사</p>
+                                            <p class="text-xs">SPOT 네트워크로 안정적 거래처 확대</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 협력업체 소개 -->
+                    <div class="mb-8">
+                        <h3 class="text-2xl font-bold text-center mb-12">SPOT 협력업체</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <!-- 육가공업체 -->
+                            <div
+                                class="group p-8 border border-zinc-100 rounded-3xl hover:border-blue-200 hover:shadow-xl transition-all bg-white relative overflow-hidden">
+                                <div
+                                    class="absolute top-0 right-0 w-32 h-32 bg-red-50 rounded-full blur-3xl opacity-30 group-hover:opacity-60 transition-opacity">
+                                </div>
+                                <div class="flex justify-center mb-6">
+                                    <img src="spot-assets/SPOT_Secret Ingredient Delivery.png" alt="육가공"
+                                        class="w-36 h-36 object-contain group-hover:scale-110 transition-transform duration-300" loading="lazy">
+                                </div>
+                                <h4 class="text-xl font-bold mb-3 text-center relative z-10">육가공업체</h4>
+                                <p class="text-zinc-500 text-sm leading-relaxed text-center relative z-10">
+                                    브랜드육·가공육을 전문으로 취급하며, 직영점에서 사용하는 전용 제품을 동일하게 공급합니다.
+                                </p>
+                            </div>
+
+                            <!-- 소스제조사 -->
+                            <div
+                                class="group p-8 border border-zinc-100 rounded-3xl hover:border-blue-200 hover:shadow-xl transition-all bg-white relative overflow-hidden">
+                                <div
+                                    class="absolute top-0 right-0 w-32 h-32 bg-orange-50 rounded-full blur-3xl opacity-30 group-hover:opacity-60 transition-opacity">
+                                </div>
+                                <div class="flex justify-center mb-6">
+                                    <img src="spot-assets/SPOT_Secret Ingredient Delivery2.png" alt="소스제조"
+                                        class="w-36 h-36 object-contain group-hover:scale-110 transition-transform duration-300" loading="lazy">
+                                </div>
+                                <h4 class="text-xl font-bold mb-3 text-center relative z-10">소스제조사</h4>
+                                <p class="text-zinc-500 text-sm leading-relaxed text-center relative z-10">
+                                    직영점에서 사용하는 전용 소스를 직접 제조·생산합니다. 시중에서 구할 수 없는 맛의 비결입니다.
+                                </p>
+                            </div>
+
+                            <!-- 물류사 -->
+                            <div
+                                class="group p-8 border border-zinc-100 rounded-3xl hover:border-blue-200 hover:shadow-xl transition-all bg-white relative overflow-hidden">
+                                <div
+                                    class="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-full blur-3xl opacity-30 group-hover:opacity-60 transition-opacity">
+                                </div>
+                                <div class="flex justify-center mb-6">
+                                    <img src="spot-assets/SPOT_LOGISTICS.png" alt="물류"
+                                        class="w-36 h-36 object-contain group-hover:scale-110 transition-transform duration-300" loading="lazy">
+                                </div>
+                                <h4 class="text-xl font-bold mb-3 text-center relative z-10">물류사</h4>
+                                <p class="text-zinc-500 text-sm leading-relaxed text-center relative z-10">
+                                    누락이나 이슈 발생 시 즉각 대응합니다. 전국 단위 배송 네트워크로 안정적으로 공급합니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 기타 협력업체 -->
+                    <div class="bg-zinc-50 p-8 rounded-3xl">
+                        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                            <div class="flex items-center gap-4">
+                                <div class="flex -space-x-3">
+                                    <div
+                                        class="w-10 h-10 bg-zinc-200 rounded-full flex items-center justify-center border-2 border-white">
+                                        <i data-lucide="hammer" class="w-4 h-4 text-zinc-500"></i>
+                                    </div>
+                                    <div
+                                        class="w-10 h-10 bg-zinc-200 rounded-full flex items-center justify-center border-2 border-white">
+                                        <i data-lucide="chef-hat" class="w-4 h-4 text-zinc-500"></i>
+                                    </div>
+                                    <div
+                                        class="w-10 h-10 bg-zinc-200 rounded-full flex items-center justify-center border-2 border-white">
+                                        <i data-lucide="palette" class="w-4 h-4 text-zinc-500"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-zinc-900">인테리어, 주방기물, 간판 등</p>
+                                    <p class="text-sm text-zinc-500">그 외 믿을 만한 협력업체들과 연결되어 있습니다.</p>
+                                </div>
+                            </div>
+                            <p class="text-sm text-zinc-600 font-medium bg-white px-4 py-2 rounded-full">
+                                이슈 발생 시 <span class="text-blue-600 font-bold">SPOT이 적극적으로 소통</span>합니다
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SPOT 3대 무기 섹션 -->
+            <section id="weapons" class="py-32 px-8 lg:px-24 bg-zinc-50 border-y border-zinc-100">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-20">
+                        <span class="text-blue-600 font-black tracking-widest text-xs uppercase">SPOT's 3 Weapons</span>
+                        <h2 class="text-4xl font-bold mb-6 mt-4">독립 브랜드 성공을 위한 3대 무기</h2>
+                        <p class="text-zinc-500 text-lg">전용 식자재, 운영 매뉴얼, 마케팅 툴킷으로 당신의 브랜드 경쟁력을 완성합니다.</p>
+                    </div>
+
+                    <!-- 3대 무기 카드 -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+                        <!-- 무기 1: 전용 식자재 -->
+                        <div
+                            class="group bg-white p-8 rounded-3xl shadow-lg shadow-zinc-100 border border-zinc-100 hover:shadow-xl hover:border-blue-200 transition-all relative overflow-hidden">
+                            <div
+                                class="absolute top-0 right-0 w-40 h-40 bg-blue-50 rounded-full blur-3xl opacity-30 group-hover:opacity-60 transition-opacity">
+                            </div>
+                            <div class="flex justify-center mb-4">
+                                <img src="spot-assets/SPOT_sanbang.png" alt="전용 식자재"
+                                    class="w-32 h-32 object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                            </div>
+                            <span class="text-xs font-bold text-blue-600 uppercase tracking-wider relative z-10">Weapon
+                                01</span>
+                            <h3 class="text-2xl font-bold mt-2 mb-4 relative z-10">전용 식자재</h3>
+                            <p class="text-zinc-500 leading-relaxed mb-4 relative z-10">시중에서 구할 수 없는 소스, 육수, 토핑, 원두 등으로
+                                메뉴 차별성을 만듭니다.</p>
+                            <ul class="space-y-2 text-sm text-zinc-600 relative z-10">
+                                <li class="flex items-center gap-2"><i data-lucide="check"
+                                        class="w-4 h-4 text-blue-600"></i> 본점·직영점 동일 단가 공급</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check"
+                                        class="w-4 h-4 text-blue-600"></i> 베이스 → 6~12개 파생 메뉴 확장</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check"
+                                        class="w-4 h-4 text-blue-600"></i> 재구매율·객단가 상승 구조</li>
+                            </ul>
+                        </div>
+
+                        <!-- 무기 2: Playbook (운영 매뉴얼) -->
+                        <div
+                            class="group bg-white p-8 rounded-3xl shadow-lg shadow-zinc-100 border border-zinc-100 hover:shadow-xl hover:border-blue-200 transition-all relative overflow-hidden">
+                            <div
+                                class="absolute top-0 right-0 w-40 h-40 bg-green-50 rounded-full blur-3xl opacity-30 group-hover:opacity-60 transition-opacity">
+                            </div>
+                            <div class="flex justify-center mb-4">
+                                <img src="spot-assets/SPOT_Analysis Pose.png" alt="Playbook"
+                                    class="w-32 h-32 object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                            </div>
+                            <span class="text-xs font-bold text-blue-600 uppercase tracking-wider relative z-10">Weapon
+                                02</span>
+                            <h3 class="text-2xl font-bold mt-2 mb-4 relative z-10">Playbook 전수</h3>
+                            <p class="text-zinc-500 leading-relaxed mb-4 relative z-10">레시피부터 원가표, 판매 포인트까지 검증된 운영 매뉴얼을
+                                전수합니다.</p>
+                            <ul class="space-y-2 text-sm text-zinc-600 relative z-10">
+                                <li class="flex items-center gap-2"><i data-lucide="check"
+                                        class="w-4 h-4 text-blue-600"></i> 그램수·온도·공정 표준화 레시피</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check"
+                                        class="w-4 h-4 text-blue-600"></i> 재료비 구조 원가표 제공</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check"
+                                        class="w-4 h-4 text-blue-600"></i> 매장 적용 프로토콜 가이드</li>
+                            </ul>
+                        </div>
+
+                        <!-- 무기 3: 운영 OS (툴킷) -->
+                        <div
+                            class="group bg-white p-8 rounded-3xl shadow-lg shadow-zinc-100 border border-zinc-100 hover:shadow-xl hover:border-blue-200 transition-all relative overflow-hidden">
+                            <div
+                                class="absolute top-0 right-0 w-40 h-40 bg-purple-50 rounded-full blur-3xl opacity-30 group-hover:opacity-60 transition-opacity">
+                            </div>
+                            <div class="flex justify-center mb-4">
+                                <img src="spot-assets/SPOT_Provocation Pose.png" alt="운영 OS"
+                                    class="w-32 h-32 object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                            </div>
+                            <span class="text-xs font-bold text-blue-600 uppercase tracking-wider relative z-10">Weapon
+                                03</span>
+                            <h3 class="text-2xl font-bold mt-2 mb-4 relative z-10">운영 OS 툴킷</h3>
+                            <p class="text-zinc-500 leading-relaxed mb-4 relative z-10">콘텐츠 제작부터 지역 마케팅까지, 홍보 체계를 지원합니다.
+                            </p>
+                            <ul class="space-y-2 text-sm text-zinc-600 relative z-10">
+                                <li class="flex items-center gap-2"><i data-lucide="check"
+                                        class="w-4 h-4 text-blue-600"></i> 사진·영상 템플릿 & 촬영 가이드</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check"
+                                        class="w-4 h-4 text-blue-600"></i> 메뉴판·배너 디자인 에셋</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check"
+                                        class="w-4 h-4 text-blue-600"></i> 지역 마케팅 실행 체크리스트</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 공급 시스템 안내 -->
+                    <div
+                        class="bg-white p-12 rounded-[50px] shadow-2xl shadow-zinc-200 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                        <div class="space-y-6">
+                            <h3 class="text-2xl font-bold">검증된 맛집의 전용상품, 동일 단가 공급</h3>
+                            <p class="text-zinc-500 leading-relaxed">제주, 부산의 로컬 맛집부터 인기 브랜드의 핵심 소스까지. 시중에서 구할 수 없는
+                                전용 식자재를 본점·직영점과 동일한 단가로 공급합니다. 하나의 베이스 식자재로 6~12개 메뉴 확장이 가능합니다.</p>
+                            <div class="flex gap-4 items-center pt-4">
+                                <div class="p-4 bg-zinc-50 rounded-2xl text-center flex-1">
+                                    <p class="text-xs text-zinc-400 font-bold mb-1 uppercase tracking-tighter">
+                                        Same Price</p>
+                                    <p class="font-bold">본점 동일 단가</p>
+                                </div>
+                                <div class="p-4 bg-zinc-50 rounded-2xl text-center flex-1">
+                                    <p class="text-xs text-zinc-400 font-bold mb-1 uppercase tracking-tighter">
+                                        Nationwide</p>
+                                    <p class="font-bold">전국 단위 물류</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="spot-assets/SPOT_LOGISTICS.png" alt="물류 시스템" class="rounded-3xl grayscale brightness-105" loading="lazy">
+                    </div>
+                </div>
+            </section>
+
+            <!-- 전용상품 베이스 섹션 -->
+            <section class="py-32 px-8 lg:px-24 bg-white border-y border-zinc-100">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-16">
+                        <span class="text-blue-600 font-black tracking-widest text-xs uppercase">Exclusive Base
+                            System</span>
+                        <h2 class="text-4xl font-bold mt-4 mb-6">전용상품은 '재료'가 아닌<br><span
+                                class="text-blue-600">'베이스'</span>입니다</h2>
+                        <p class="text-zinc-500 text-lg max-w-3xl mx-auto">
+                            SPOT의 전용상품은 하나의 메뉴를 위한 재료가 아닙니다.<br>
+                            여러 메뉴로 확장 가능한 <strong class="text-zinc-900">'베이스'</strong>입니다.
+                        </p>
+                    </div>
+
+                    <!-- 베이스 확장 예시 -->
+                    <div class="bg-gradient-to-br from-blue-50 to-zinc-50 p-8 lg:p-12 rounded-[40px] mb-12">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                            <!-- 왼쪽: 베이스 소스 -->
+                            <div class="text-center lg:text-left">
+                                <div
+                                    class="inline-block bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-bold mb-6">
+                                    하나의 베이스로
+                                </div>
+                                <div class="bg-white p-8 rounded-3xl shadow-lg inline-block">
+                                    <div
+                                        class="w-24 h-24 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                        <i data-lucide="droplet" class="w-12 h-12 text-blue-600"></i>
+                                    </div>
+                                    <h4 class="text-xl font-bold text-zinc-900">전용 베이스 소스</h4>
+                                    <p class="text-sm text-zinc-500 mt-2">시중에서 구할 수 없는<br>검증된 맛집의 비결</p>
+                                </div>
+                            </div>
+
+                            <!-- 오른쪽: 확장 메뉴들 -->
+                            <div>
+                                <div
+                                    class="inline-block bg-zinc-900 text-white px-4 py-2 rounded-full text-sm font-bold mb-6">
+                                    다양한 메뉴로 확장
+                                </div>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div
+                                        class="bg-white p-6 rounded-2xl shadow-sm border border-zinc-100 hover:border-blue-200 transition-all">
+                                        <div
+                                            class="w-10 h-10 bg-red-100 rounded-xl flex items-center justify-center mb-3">
+                                            <i data-lucide="flame" class="w-5 h-5 text-red-600"></i>
+                                        </div>
+                                        <h5 class="font-bold text-zinc-900">메인 메뉴 1개</h5>
+                                        <p class="text-xs text-zinc-500 mt-1">대표 시그니처 메뉴</p>
+                                    </div>
+                                    <div
+                                        class="bg-white p-6 rounded-2xl shadow-sm border border-zinc-100 hover:border-blue-200 transition-all">
+                                        <div
+                                            class="w-10 h-10 bg-green-100 rounded-xl flex items-center justify-center mb-3">
+                                            <i data-lucide="salad" class="w-5 h-5 text-green-600"></i>
+                                        </div>
+                                        <h5 class="font-bold text-zinc-900">사이드 메뉴 2개</h5>
+                                        <p class="text-xs text-zinc-500 mt-1">객단가 상승 유도</p>
+                                    </div>
+                                    <div
+                                        class="bg-white p-6 rounded-2xl shadow-sm border border-zinc-100 hover:border-blue-200 transition-all">
+                                        <div
+                                            class="w-10 h-10 bg-orange-100 rounded-xl flex items-center justify-center mb-3">
+                                            <i data-lucide="sun" class="w-5 h-5 text-orange-600"></i>
+                                        </div>
+                                        <h5 class="font-bold text-zinc-900">시즌 메뉴 1개</h5>
+                                        <p class="text-xs text-zinc-500 mt-1">재방문 유도</p>
+                                    </div>
+                                    <div
+                                        class="bg-white p-6 rounded-2xl shadow-sm border border-zinc-100 hover:border-blue-200 transition-all">
+                                        <div
+                                            class="w-10 h-10 bg-purple-100 rounded-xl flex items-center justify-center mb-3">
+                                            <i data-lucide="plus-circle" class="w-5 h-5 text-purple-600"></i>
+                                        </div>
+                                        <h5 class="font-bold text-zinc-900">+@ 확장 가능</h5>
+                                        <p class="text-xs text-zinc-500 mt-1">총 6~12개 메뉴</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 핵심 메시지 -->
+                    <div class="text-center">
+                        <div class="inline-flex items-center gap-4 bg-zinc-900 text-white px-8 py-6 rounded-2xl">
+                            <i data-lucide="lightbulb" class="w-8 h-8 text-yellow-400"></i>
+                            <div class="text-left">
+                                <p class="font-bold text-lg">하나의 베이스 = 6~12개 메뉴 구성</p>
+                                <p class="text-zinc-400 text-sm">재구매율과 객단가를 동시에 올리는 메뉴 전략</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 줄서는 매장들의 무기 섹션 -->
+            <section class="py-32 px-8 lg:px-24 bg-zinc-900 text-white">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-16">
+                        <span class="text-blue-400 font-black tracking-widest text-xs uppercase">Exclusive Products by
+                            Category</span>
+                        <h2 class="text-4xl font-bold mt-4 mb-6">SPOT이 운영하는<br><span class="text-blue-400">줄서는
+                                매장들</span>의 무기</h2>
+                        <p class="text-zinc-400 text-lg max-w-2xl mx-auto">
+                            모두 일반상품이 아닌, <span class="text-white font-bold">현재 직영점에서 사용하는 그대로</span>입니다.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- 일반음식점 -->
+                        <div
+                            class="group bg-zinc-800 p-8 rounded-3xl hover:bg-zinc-700 transition-all relative overflow-hidden">
+                            <div class="absolute top-0 right-0 w-32 h-32 bg-orange-500/10 rounded-full blur-3xl"></div>
+                            <div class="w-14 h-14 bg-orange-500/20 rounded-2xl flex items-center justify-center mb-6">
+                                <i data-lucide="soup" class="w-7 h-7 text-orange-400"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-2">일반음식점</h3>
+                            <p class="text-zinc-500 text-sm mb-6">한식, 분식, 면류 등</p>
+                            <ul class="space-y-3">
+                                <li class="flex items-center gap-3">
+                                    <i data-lucide="check" class="w-4 h-4 text-orange-400"></i>
+                                    <span class="text-zinc-300">전용 육수</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i data-lucide="check" class="w-4 h-4 text-orange-400"></i>
+                                    <span class="text-zinc-300">비빔장 · 양념장</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i data-lucide="check" class="w-4 h-4 text-orange-400"></i>
+                                    <span class="text-zinc-300">표준화 레시피</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i data-lucide="check" class="w-4 h-4 text-orange-400"></i>
+                                    <span class="text-zinc-300">원가분석표</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i data-lucide="check" class="w-4 h-4 text-orange-400"></i>
+                                    <span class="text-zinc-300">마케팅 툴킷</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- 카페 -->
+                        <div
+                            class="group bg-zinc-800 p-8 rounded-3xl hover:bg-zinc-700 transition-all relative overflow-hidden">
+                            <div class="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-full blur-3xl"></div>
+                            <div class="w-14 h-14 bg-amber-500/20 rounded-2xl flex items-center justify-center mb-6">
+                                <i data-lucide="coffee" class="w-7 h-7 text-amber-400"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-2">카페</h3>
+                            <p class="text-zinc-500 text-sm mb-6">디저트 카페, 음료 전문점</p>
+                            <ul class="space-y-3">
+                                <li class="flex items-center gap-3">
+                                    <i data-lucide="check" class="w-4 h-4 text-amber-400"></i>
+                                    <span class="text-zinc-300">전용 밀크티 베이스</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i data-lucide="check" class="w-4 h-4 text-amber-400"></i>
+                                    <span class="text-zinc-300 font-bold">50여 가지 시그니처 레시피</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i data-lucide="check" class="w-4 h-4 text-amber-400"></i>
+                                    <span class="text-zinc-300">줄 서게 만드는 메뉴 구성</span>
+                                </li>
+                            </ul>
+                            <div class="mt-6 pt-4 border-t border-zinc-700">
+                                <p class="text-xs text-zinc-500">직영 카페에서 검증된 베스트셀러 메뉴</p>
+                            </div>
+                        </div>
+
+                        <!-- 양식 -->
+                        <div
+                            class="group bg-zinc-800 p-8 rounded-3xl hover:bg-zinc-700 transition-all relative overflow-hidden">
+                            <div class="absolute top-0 right-0 w-32 h-32 bg-red-500/10 rounded-full blur-3xl"></div>
+                            <div class="w-14 h-14 bg-red-500/20 rounded-2xl flex items-center justify-center mb-6">
+                                <i data-lucide="pizza" class="w-7 h-7 text-red-400"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-2">양식</h3>
+                            <p class="text-zinc-500 text-sm mb-6">피자, 파스타 전문점</p>
+                            <ul class="space-y-3">
+                                <li class="flex items-center gap-3">
+                                    <i data-lucide="check" class="w-4 h-4 text-red-400"></i>
+                                    <span class="text-zinc-300">전용 도우</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i data-lucide="check" class="w-4 h-4 text-red-400"></i>
+                                    <span class="text-zinc-300">피자 소스류</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i data-lucide="check" class="w-4 h-4 text-red-400"></i>
+                                    <span class="text-zinc-300">파스타 소스류</span>
+                                </li>
+                            </ul>
+                            <div class="mt-6 pt-4 border-t border-zinc-700">
+                                <p class="text-xs text-zinc-500">본점 레시피 그대로 재현</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 강조 메시지 -->
+                    <div class="mt-16 text-center">
+                        <div class="inline-block bg-blue-600 px-8 py-4 rounded-full">
+                            <p class="font-bold">일반 유통 상품 ✕ → 직영점 전용상품 그대로 ✓</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3 Persona Solutions -->
+            <section id="personas" class="py-32 px-8 lg:px-24">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-20">
+                        <span class="text-blue-600 font-black tracking-widest text-xs uppercase">Target Solutions</span>
+                        <h2 class="text-4xl font-bold mt-4">당신의 상황에 맞는 시스템을 구독하세요</h2>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="persona-grid">
+                        <!-- Injected from data.js -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- 적합/비적합 섹션 -->
+            <section class="py-32 px-8 lg:px-24 bg-zinc-50">
+                <div class="max-w-5xl mx-auto">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        <!-- 적합한 분 -->
+                        <div class="bg-white p-10 rounded-[40px] border border-zinc-100 shadow-lg">
+                            <div class="flex items-center gap-3 mb-8">
+                                <div class="w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center">
+                                    <i data-lucide="check-circle" class="w-6 h-6 text-blue-600"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold text-zinc-900">이런 분께 맞습니다</h3>
+                            </div>
+                            <ul class="space-y-4">
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check" class="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0"></i>
+                                    <span class="text-zinc-700">개인 매장을 운영 중인 사장님</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check" class="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0"></i>
+                                    <span class="text-zinc-700">대표 메뉴를 만들고 싶은 분</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check" class="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0"></i>
+                                    <span class="text-zinc-700">프랜차이즈는 싫지만, 시스템은 필요한 분</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check" class="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0"></i>
+                                    <span class="text-zinc-700">장기적으로 브랜드를 키우고 싶은 분</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check" class="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0"></i>
+                                    <span class="text-zinc-700">단체급식, 기업급식 담당자</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- 비적합한 분 -->
+                        <div class="bg-zinc-900 p-10 rounded-[40px] text-white">
+                            <div class="flex items-center gap-3 mb-8">
+                                <div class="w-12 h-12 bg-zinc-800 rounded-2xl flex items-center justify-center">
+                                    <i data-lucide="x-circle" class="w-6 h-6 text-zinc-400"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold">이런 분께는 맞지 않습니다</h3>
+                            </div>
+                            <ul class="space-y-4">
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="x" class="w-5 h-5 text-zinc-500 mt-0.5 flex-shrink-0"></i>
+                                    <span class="text-zinc-400">간판·메뉴까지 정해주길 원하는 분</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="x" class="w-5 h-5 text-zinc-500 mt-0.5 flex-shrink-0"></i>
+                                    <span class="text-zinc-400">최저가 소스만 찾는 분</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="x" class="w-5 h-5 text-zinc-500 mt-0.5 flex-shrink-0"></i>
+                                    <span class="text-zinc-400">단기 유행만 노리는 분</span>
+                                </li>
+                            </ul>
+                            <div class="mt-8 pt-6 border-t border-zinc-800">
+                                <p class="text-sm text-zinc-500">SPOT은 장기적인 파트너십을 지향합니다.<br>함께 성장할 준비가 된 분들을 기다립니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Secret Catalog (Locked Content) -->
+            <section id="catalog"
+                class="py-32 bg-zinc-900 text-white rounded-[60px] mx-4 lg:mx-8 overflow-hidden relative">
+                <div class="absolute inset-0 opacity-20 pointer-events-none">
+                    <img src="spot-assets/18_줄서기3.gif" class="w-full h-full object-cover">
+                </div>
+                <div class="max-w-5xl mx-auto px-8 relative z-10 text-center">
+                    <h2 class="text-4xl font-bold mb-6">시크릿 브랜드 카탈로그</h2>
+                    <p class="text-zinc-400 text-lg mb-16 max-w-2xl mx-auto">현재 공급 중인 50년 한식 명가, 로컬 핫플 등의 상세 리스트는 파트너십
+                        상권 보호를 위해 잠금 처리되어 있습니다.</p>
+
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+                        <div class="catalog-item aspect-square bg-zinc-800 rounded-3xl flex items-center justify-center relative group overflow-hidden"
+                            style="background-image: url('spot-assets/18_줄서기3.gif'); background-size: cover; background-position: center;">
+                            <div
+                                class="absolute inset-0 bg-black/60 backdrop-blur-sm rounded-3xl flex items-center justify-center transition-all group-hover:backdrop-blur-none group-hover:bg-black/40">
+                                <i data-lucide="lock" class="w-8 h-8 text-white/70"></i>
+                            </div>
+                            <p class="absolute bottom-4 text-xs font-bold text-white/50 z-10">줄서는 매장</p>
+                        </div>
+                        <div class="catalog-item aspect-square bg-zinc-800 rounded-3xl flex items-center justify-center relative group overflow-hidden"
+                            style="background-image: url('spot-assets/양념장.png'); background-size: cover; background-position: center;">
+                            <div
+                                class="absolute inset-0 bg-black/60 backdrop-blur-sm rounded-3xl flex items-center justify-center transition-all group-hover:backdrop-blur-none group-hover:bg-black/40">
+                                <i data-lucide="lock" class="w-8 h-8 text-white/70"></i>
+                            </div>
+                            <p class="absolute bottom-4 text-xs font-bold text-white/50 z-10">전용 양념장</p>
+                        </div>
+                        <div class="catalog-item aspect-square bg-zinc-800 rounded-3xl flex items-center justify-center relative group overflow-hidden"
+                            style="background-image: url('spot-assets/산방육수.png'); background-size: cover; background-position: center;">
+                            <div
+                                class="absolute inset-0 bg-black/60 backdrop-blur-sm rounded-3xl flex items-center justify-center transition-all group-hover:backdrop-blur-none group-hover:bg-black/40">
+                                <i data-lucide="lock" class="w-8 h-8 text-white/70"></i>
+                            </div>
+                            <p class="absolute bottom-4 text-xs font-bold text-white/50 z-10">산방 육수</p>
+                        </div>
+                        <div class="catalog-item aspect-square bg-zinc-800 rounded-3xl flex items-center justify-center relative group overflow-hidden"
+                            style="background-image: url('spot-assets/면만지는거.png'); background-size: cover; background-position: center;">
+                            <div
+                                class="absolute inset-0 bg-black/60 backdrop-blur-sm rounded-3xl flex items-center justify-center transition-all group-hover:backdrop-blur-none group-hover:bg-black/40">
+                                <i data-lucide="lock" class="w-8 h-8 text-white/70"></i>
+                            </div>
+                            <p class="absolute bottom-4 text-xs font-bold text-white/50 z-10">수제 면 제조</p>
+                        </div>
+                        <div class="catalog-item aspect-square bg-zinc-800 rounded-3xl flex items-center justify-center relative group overflow-hidden"
+                            style="background-image: url('spot-assets/면삶는거.png'); background-size: cover; background-position: center;">
+                            <div
+                                class="absolute inset-0 bg-black/60 backdrop-blur-sm rounded-3xl flex items-center justify-center transition-all group-hover:backdrop-blur-none group-hover:bg-black/40">
+                                <i data-lucide="lock" class="w-8 h-8 text-white/70"></i>
+                            </div>
+                            <p class="absolute bottom-4 text-xs font-bold text-white/50 z-10">면 삶기</p>
+                        </div>
+                        <div class="catalog-item aspect-square bg-zinc-800 rounded-3xl flex items-center justify-center relative group overflow-hidden"
+                            style="background-image: url('spot-assets/줄서기 모슬포2.gif'); background-size: cover; background-position: center;">
+                            <div
+                                class="absolute inset-0 bg-black/60 backdrop-blur-sm rounded-3xl flex items-center justify-center transition-all group-hover:backdrop-blur-none group-hover:bg-black/40">
+                                <i data-lucide="lock" class="w-8 h-8 text-white/70"></i>
+                            </div>
+                            <p class="absolute bottom-4 text-xs font-bold text-white/50 z-10">모슬포 줄서기</p>
+                        </div>
+                        <div class="catalog-item aspect-square bg-zinc-800 rounded-3xl flex items-center justify-center relative group overflow-hidden"
+                            style="background-image: url('spot-assets/고기국수 사진2.jpg'); background-size: cover; background-position: center;">
+                            <div
+                                class="absolute inset-0 bg-black/60 backdrop-blur-sm rounded-3xl flex items-center justify-center transition-all group-hover:backdrop-blur-none group-hover:bg-black/40">
+                                <i data-lucide="lock" class="w-8 h-8 text-white/70"></i>
+                            </div>
+                            <p class="absolute bottom-4 text-xs font-bold text-white/50 z-10">고기국수</p>
+                        </div>
+                        <div class="catalog-item aspect-square bg-zinc-800 rounded-3xl flex items-center justify-center relative group overflow-hidden"
+                            style="background-image: url('spot-assets/제주산방_001.jpg'); background-size: cover; background-position: center;">
+                            <div
+                                class="absolute inset-0 bg-black/60 backdrop-blur-sm rounded-3xl flex items-center justify-center transition-all group-hover:backdrop-blur-none group-hover:bg-black/40">
+                                <i data-lucide="lock" class="w-8 h-8 text-white/70"></i>
+                            </div>
+                            <p class="absolute bottom-4 text-xs font-bold text-white/50 z-10">제주산방</p>
+                        </div>
+                    </div>
+
+                    <button onclick="openModal()"
+                        class="bg-blue-600 hover:bg-blue-700 text-white px-10 py-5 rounded-3xl font-bold text-xl transition-all shadow-2xl shadow-blue-500/20">
+                        상담 신청하고 카탈로그 잠금 해제
+                    </button>
+                </div>
+            </section>
+
+            <!-- 파트너 혜택 섹션 -->
+            <section class="py-32 px-8 lg:px-24">
+                <div class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-20 items-center">
+                    <div class="lg:w-1/2 order-2 lg:order-1">
+                        <img src="spot-assets/산방만두-고기5개 (1) (1).jpg" alt="산방만두"
+                            class="rounded-[40px] shadow-2xl grayscale object-cover h-[400px] md:h-[500px] w-full" loading="lazy">
+                    </div>
+                    <div class="lg:w-1/2 order-1 lg:order-2 space-y-8">
+                        <span class="text-blue-600 font-black tracking-widest text-xs uppercase">Partner Benefits</span>
+                        <h2 class="text-4xl font-bold">파트너님이 받는<br>실질적인 혜택</h2>
+                        <p class="text-zinc-500 text-lg leading-relaxed">SPOT은 단순 물류 공급에 멈추지 않습니다.
+                            매장 운영에 필요한 마케팅 지원부터 콘텐츠 제작까지, 사장님이 본업에 집중할 수 있도록 돕습니다.</p>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-3 font-bold text-zinc-700"><i data-lucide="check-circle-2"
+                                    class="text-blue-600"></i> 메뉴판·배너·SNS 콘텐츠 디자인 지원</li>
+                            <li class="flex items-center gap-3 font-bold text-zinc-700"><i data-lucide="check-circle-2"
+                                    class="text-blue-600"></i> 상권에 맞는 마케팅 전략 가이드</li>
+                            <li class="flex items-center gap-3 font-bold text-zinc-700"><i data-lucide="check-circle-2"
+                                    class="text-blue-600"></i> 운영 중 발생하는 이슈 즉각 대응</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 교육 및 비용 안내 섹션 -->
+            <section class="py-32 px-8 lg:px-24 bg-gradient-to-b from-blue-600 to-blue-700 text-white relative overflow-hidden">
+                <div class="absolute inset-0 opacity-10">
+                    <div class="absolute top-10 left-10 w-64 h-64 bg-white rounded-full blur-3xl"></div>
+                    <div class="absolute bottom-10 right-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+                </div>
+                <div class="max-w-4xl mx-auto relative z-10">
+                    <div class="text-center mb-12">
+                        <span class="inline-block px-4 py-2 bg-white/20 rounded-full text-sm font-bold mb-6">단 1번의 투자</span>
+                        <h2 class="text-4xl lg:text-5xl font-bold mb-6">효과를 극대화하려면<br>딱 한 번의 비용이 필요합니다</h2>
+                    </div>
+
+                    <div class="bg-white rounded-[40px] p-8 lg:p-12 text-zinc-900 shadow-2xl">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                            <!-- 왼쪽: 교육 내용 -->
+                            <div>
+                                <h3 class="text-2xl font-bold mb-6">직영점 현장 교육 <span class="text-blue-600">3일</span></h3>
+                                <p class="text-zinc-500 mb-6">해당 브랜드의 실제 직영점에서 진행됩니다.</p>
+                                <ul class="space-y-4">
+                                    <li class="flex items-start gap-3">
+                                        <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                                            <i data-lucide="map" class="w-4 h-4 text-blue-600"></i>
+                                        </div>
+                                        <div>
+                                            <p class="font-bold text-zinc-900">매장 동선 & 오퍼레이션</p>
+                                            <p class="text-sm text-zinc-500">효율적인 주방 동선과 운영 흐름 체득</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                                            <i data-lucide="settings" class="w-4 h-4 text-blue-600"></i>
+                                        </div>
+                                        <div>
+                                            <p class="font-bold text-zinc-900">운영 시스템 전수</p>
+                                            <p class="text-sm text-zinc-500">발주, 재고관리, CS 대응 노하우</p>
+                                        </div>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                                            <i data-lucide="chef-hat" class="w-4 h-4 text-blue-600"></i>
+                                        </div>
+                                        <div>
+                                            <p class="font-bold text-zinc-900">레시피 & 조리 실습</p>
+                                            <p class="text-sm text-zinc-500">그램수·온도·타이밍까지 완벽 재현</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- 오른쪽: 가격 -->
+                            <div class="bg-zinc-50 rounded-3xl p-8 text-center">
+                                <p class="text-sm font-bold text-zinc-400 mb-2">메뉴 컨설팅 + 현장 교육</p>
+                                <div class="mb-4">
+                                    <span class="text-2xl text-zinc-400 line-through">300만원</span>
+                                    <span class="ml-2 px-3 py-1 bg-red-500 text-white text-sm font-bold rounded-full">80% OFF</span>
+                                </div>
+                                <div class="mb-6">
+                                    <span class="text-6xl font-black text-blue-600">60</span>
+                                    <span class="text-2xl font-bold text-zinc-900">만원</span>
+                                </div>
+                                <div class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-bold inline-block">
+                                    평생 단 1회 비용
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8 pt-8 border-t border-zinc-100 text-center">
+                            <button onclick="openModal()"
+                                class="bg-blue-600 hover:bg-blue-700 text-white px-12 py-5 rounded-3xl font-bold text-xl transition-all shadow-xl shadow-blue-200">
+                                지금 바로 상담 신청하기
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section id="faq" class="py-32 px-8 lg:px-24">
+                <div class="max-w-3xl mx-auto">
+                    <div class="text-center mb-16">
+                        <h2 class="text-3xl font-bold mb-4">자주 묻는 질문</h2>
+                        <p class="text-zinc-500">파트너님들이 가장 궁금해하시는 질문들에 답합니다.</p>
+                    </div>
+
+                    <!-- 자율 강조 배너 -->
+                    <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-8 text-center">
+                        <p class="text-blue-600 font-bold text-lg">
+                            <i data-lucide="info" class="w-5 h-5 inline-block mr-2 -mt-1"></i>
+                            우리동네 SPOT은 모든 사항이 <span class="text-blue-700">"자율"</span>입니다
+                        </p>
+                    </div>
+
+                    <div class="space-y-4" id="faq-container">
+                        <!-- Injected from data.js -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- SPOT 정의 섹션 -->
+            <section class="py-32 px-8 lg:px-24 bg-zinc-900 text-white">
+                <div class="max-w-4xl mx-auto text-center">
+                    <span class="text-blue-400 font-black tracking-widest text-xs uppercase">What is SPOT?</span>
+                    <h2 class="text-4xl lg:text-5xl font-bold mt-6 mb-8 leading-tight">
+                        SPOT은<br>
+                        <span class="text-blue-400">S</span>ystem <span class="text-blue-400">P</span>rovider <span
+                            class="text-blue-400">o</span>f <span class="text-blue-400">T</span>otal Solution
+                    </h2>
+                    <p class="text-zinc-400 text-lg lg:text-xl leading-relaxed max-w-2xl mx-auto mb-12">
+                        프랜차이즈가 아닙니다.<br>
+                        검증된 맛집의 전용상품과 운영 노하우를 공급하여<br>
+                        <span class="text-white font-bold">독립 브랜드의 성공을 지원하는 솔루션 제공자</span>입니다.
+                    </p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                        <div class="bg-zinc-800 p-6 rounded-2xl">
+                            <div
+                                class="w-12 h-12 bg-blue-600/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                                <i data-lucide="package" class="w-6 h-6 text-blue-400"></i>
+                            </div>
+                            <h4 class="font-bold mb-2">전용상품 공급</h4>
+                            <p class="text-sm text-zinc-500">본점·직영점 동일 단가</p>
+                        </div>
+                        <div class="bg-zinc-800 p-6 rounded-2xl">
+                            <div
+                                class="w-12 h-12 bg-blue-600/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                                <i data-lucide="book-open" class="w-6 h-6 text-blue-400"></i>
+                            </div>
+                            <h4 class="font-bold mb-2">운영 노하우 전수</h4>
+                            <p class="text-sm text-zinc-500">Playbook & 마케팅 툴킷</p>
+                        </div>
+                        <div class="bg-zinc-800 p-6 rounded-2xl">
+                            <div
+                                class="w-12 h-12 bg-blue-600/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                                <i data-lucide="handshake" class="w-6 h-6 text-blue-400"></i>
+                            </div>
+                            <h4 class="font-bold mb-2">100% 자율 운영</h4>
+                            <p class="text-sm text-zinc-500">가맹비·로열티 無</p>
+                        </div>
+                    </div>
+
+                    <div class="inline-block bg-blue-600 px-8 py-4 rounded-full">
+                        <p class="font-bold text-lg">당신의 브랜드가 우리동네 명소가 됩니다.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Final CTA Footer -->
+            <footer class="bg-zinc-50 py-32 px-8 lg:px-24 border-t border-zinc-200">
+                <div class="max-w-4xl mx-auto text-center">
+                    <img src="spot-assets/SPOT_Support Pose.png" alt="SPOT 지원"
+                        class="w-48 mx-auto mb-12 rounded-full border-8 border-white shadow-2xl grayscale" loading="lazy">
+                    <h2 class="text-4xl font-bold mb-8">검증된 맛집의 노하우로,<br>우리동네 명소를 만드세요.</h2>
+                    <button onclick="openModal()"
+                        class="bg-blue-600 text-white px-12 py-5 rounded-3xl font-bold text-xl hover:bg-blue-700 transition-all shadow-xl shadow-blue-100">지금
+                        무료 상담하기</button>
+                    <p class="mt-12 text-zinc-400 font-bold tracking-tighter italic">"당신의 브랜드가 단순한 식당을 넘어 브랜드로 성장하는 여정"
+                    </p>
+
+                    <div
+                        class="mt-24 pt-12 border-t border-zinc-200 text-zinc-400 text-[10px] font-black uppercase tracking-widest flex flex-col md:flex-row justify-between items-center gap-4">
+                        <p>&copy; 2026 SPOT. System Provider of Total Solution.</p>
+                        <div class="flex gap-8">
+                            <a href="#" class="hover:text-blue-600">개인정보처리방침</a>
+                            <a href="#" class="hover:text-blue-600">이용약관</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </main>
+
+    <!-- Consultation Modal -->
+    <div id="modal" onclick="closeModal()"
+        class="fixed inset-0 bg-black/60 backdrop-blur-md z-[100] hidden items-center justify-center p-4">
+        <div onclick="event.stopPropagation()"
+            class="bg-white rounded-[40px] max-w-xl w-full p-6 md:p-10 relative animate-modal-in shadow-2xl max-h-[90vh] overflow-y-auto">
+                <button onclick="closeModal()"
+                    class="absolute top-8 right-8 text-zinc-400 hover:text-zinc-900 transition-all"><i
+                        data-lucide="x"></i></button>
+                <h3 class="text-3xl font-black mb-2 text-center text-blue-600">SPOT Partner Link</h3>
+                <p class="text-zinc-500 mb-8 text-center text-sm font-medium leading-relaxed">신청해 주시면 확인 후
+                    <br><span class="text-zinc-900 font-bold underline">순차적으로 연락드리겠습니다.</span>
+                </p>
+                <form id="consultForm" action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+                    <!-- Web3Forms Access Key - https://web3forms.com 에서 발급 -->
+                    <input type="hidden" name="access_key" value="40c5042b-41e8-49fc-a64f-f404ce51de0d">
+                    <input type="hidden" name="subject" value="[SPOT] 새로운 파트너 신청">
+                    <input type="hidden" name="from_name" value="SPOT 파트너 신청">
+
+                    <input type="text" name="name" placeholder="성함 / 업체명" required
+                        class="w-full bg-zinc-50 border-none rounded-2xl p-5 focus:ring-2 focus:ring-blue-600 outline-none text-sm font-bold">
+                    <input type="tel" name="phone" placeholder="연락처 (010-0000-0000)" required
+                        class="w-full bg-zinc-50 border-none rounded-2xl p-5 focus:ring-2 focus:ring-blue-600 outline-none text-sm font-bold">
+                    <select name="inquiry_type"
+                        class="w-full bg-zinc-50 border-none rounded-2xl p-5 focus:ring-2 focus:ring-blue-600 outline-none text-sm font-bold appearance-none cursor-pointer">
+                        <option value="개인 창업">개인 창업 (메뉴/레시피 니즈)</option>
+                        <option value="B2B 기업">B2B 기업 (전용 물류망 니즈)</option>
+                        <option value="단체 급식">단체 급식 / 위탁 운영</option>
+                        <option value="기타 제휴">기타 제휴</option>
+                    </select>
+                    <div class="p-4 bg-blue-50 rounded-2xl">
+                        <p class="text-[10px] text-blue-700 font-black mb-1 uppercase tracking-tighter">Information</p>
+                        <p class="text-xs text-blue-600 leading-snug">모든 거래는 투명한 <span class="font-bold underline">예치금
+                                시스템</span>으로 운영되며, 세금계산서는 출고일에 맞춰 자동 발행됩니다.</p>
+                    </div>
+                    <button type="submit"
+                        class="w-full bg-zinc-900 text-white py-5 rounded-3xl font-bold text-lg mt-4 shadow-xl hover:bg-black transition-all">파트너
+                        상담 신청하기</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Modal 함수 (먼저 로드) -->
+        <script>
+            function openModal() {
+                const modal = document.getElementById('modal');
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeModal() {
+                const modal = document.getElementById('modal');
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                document.body.style.overflow = 'auto';
+            }
+        </script>
+        <script type="module" src="main.js"></script>
+</body>
+
+</html>

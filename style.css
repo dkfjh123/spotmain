@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Nanum+Pen+Script&display=swap');
+
+@font-face {
+    font-family: 'Paperlogy';
+    src: url('spot-fonts/Paperlogy-4Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperlogy';
+    src: url('spot-fonts/Paperlogy-5Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperlogy';
+    src: url('spot-fonts/Paperlogy-6SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperlogy';
+    src: url('spot-fonts/Paperlogy-7Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paperlogy';
+    src: url('spot-fonts/Paperlogy-8ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ShinGung';
+    src: url('spot-fonts/한_신궁체A_1755076334348.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+:root {
+    --spot-blue: #2563eb;
+}
+
+body {
+    font-family: 'Paperlogy', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Sidebar Styling */
+.nav-link.active-nav {
+    background-color: var(--zinc-100);
+    color: var(--blue-spot);
+}
+
+.nav-link:hover {
+    color: var(--blue-spot);
+}
+
+/* Catalog Blur Effect */
+.catalog-item {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* FAQ Interaction */
+.faq-item.active {
+    background-color: #fafafa;
+    border-color: var(--blue-spot);
+}
+
+.faq-answer {
+    transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Animations */
+@keyframes modalIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9) translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.animate-modal-in {
+    animation: modalIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 1024px) {
+    main {
+        padding-top: 60px;
+    }
+
+    /* Improve touch targets */
+    button, a {
+        min-height: 44px;
+    }
+
+    /* Reduce padding on mobile */
+    section {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .animate-slow-pan {
+        animation: none;
+    }
+}
+
+/* Better touch scrolling */
+html {
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Character Image Styling */
+img.grayscale {
+    filter: grayscale(1);
+}
+
+img.grayscale:hover {
+    filter: grayscale(0);
+}
+
+/* Audio Widget Wave Animation (Optional placeholder) */
+#audioProgress {
+    transition: width 0.1s linear;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e4e4e7;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #d4d4d8;
+}
+
+/* Persona Tag */
+#persona-grid>div {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Timeline specific line */
+@media (min-width: 768px) {
+    .timeline-container::after {
+        content: '';
+        position: absolute;
+        top: 20px;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: #e4e4e7;
+        z-index: 0;
+    }
+}
+
+/* Background Animation */
+@keyframes ambientDrift {
+    0% {
+        transform: rotate(-12deg) scale(1.5) translateY(0px);
+    }
+
+    100% {
+        transform: rotate(-12deg) scale(1.5) translateY(-50px);
+    }
+}
+
+.animate-slow-pan {
+    animation: ambientDrift 20s infinite alternate ease-in-out;
+}
