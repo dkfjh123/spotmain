@@ -54,14 +54,19 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* Sidebar Styling */
+/* Navigation Styling */
 .nav-link.active-nav {
-    background-color: var(--zinc-100);
-    color: var(--blue-spot);
+    background-color: #eff6ff;
+    color: #2563eb;
 }
 
 .nav-link:hover {
-    color: var(--blue-spot);
+    color: #2563eb;
+}
+
+/* Top Navigation scroll effect */
+#topNav.scrolled {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 /* Catalog Blur Effect */
@@ -98,9 +103,9 @@ body {
 }
 
 /* Mobile Adjustments */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     main {
-        padding-top: 60px;
+        padding-top: 64px;
     }
 
     /* Improve touch targets */
@@ -112,6 +117,13 @@ body {
     section {
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+}
+
+/* Desktop header space */
+@media (min-width: 769px) {
+    main {
+        padding-top: 80px;
     }
 }
 

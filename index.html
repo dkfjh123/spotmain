@@ -55,56 +55,50 @@
         </div>
     </div>
 
-    <!-- DoorDash Style Sidebar -->
-    <nav id="sidebar"
-        class="fixed left-0 top-0 h-full w-64 border-r border-zinc-100 bg-white z-50 transition-all duration-300 transform -translate-x-full lg:translate-x-0">
-        <div class="p-8 flex flex-col h-full">
-            <div class="mb-12">
-                <h1 class="text-3xl font-black tracking-tighter text-blue-600">SPOT.</h1>
-                <p class="text-[10px] text-zinc-400 font-bold tracking-widest uppercase mt-1">System Provider</p>
-            </div>
+    <!-- Top Navigation -->
+    <header id="topNav" class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-md border-b border-zinc-100 z-50 transition-all">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="flex justify-between items-center h-16 md:h-20">
+                <!-- Logo -->
+                <a href="#hero" class="flex items-center gap-2">
+                    <h1 class="text-2xl md:text-3xl font-black tracking-tighter text-blue-600">SPOT.</h1>
+                </a>
 
-            <ul class="flex-grow space-y-1">
-                <li><a href="#hero"
-                        class="nav-link flex items-center gap-3 p-3 rounded-xl transition-all font-semibold text-zinc-500 hover:text-blue-600 active-nav"><i
-                            data-lucide="home" class="w-4 h-4"></i> Home</a></li>
-                <li><a href="#story"
-                        class="nav-link flex items-center gap-3 p-3 rounded-xl transition-all font-semibold text-zinc-500 hover:text-blue-600"><i
-                            data-lucide="book-open" class="w-4 h-4"></i> 브랜드 스토리</a></li>
-                <li><a href="#weapons"
-                        class="nav-link flex items-center gap-3 p-3 rounded-xl transition-all font-semibold text-zinc-500 hover:text-blue-600"><i
-                            data-lucide="shield" class="w-4 h-4"></i> 3대 무기</a></li>
-                <li><a href="#personas"
-                        class="nav-link flex items-center gap-3 p-3 rounded-xl transition-all font-semibold text-zinc-500 hover:text-blue-600"><i
-                            data-lucide="target" class="w-4 h-4"></i> 3대 솔루션</a></li>
-                <li><a href="#catalog"
-                        class="nav-link flex items-center gap-3 p-3 rounded-xl transition-all font-semibold text-zinc-500 hover:text-blue-600"><i
-                            data-lucide="lock" class="w-4 h-4"></i> 시크릿 카탈로그</a></li>
-                <li><a href="#process"
-                        class="nav-link flex items-center gap-3 p-3 rounded-xl transition-all font-semibold text-zinc-500 hover:text-blue-600"><i
-                            data-lucide="git-pull-request" class="w-4 h-4"></i> 상담 및 절차</a></li>
-                <li><a href="#faq"
-                        class="nav-link flex items-center gap-3 p-3 rounded-xl transition-all font-semibold text-zinc-500 hover:text-blue-600"><i
-                            data-lucide="help-circle" class="w-4 h-4"></i> 자주 묻는 질문</a></li>
-            </ul>
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center gap-1" aria-label="Main navigation">
+                    <a href="#story" class="nav-link px-4 py-2 rounded-full text-sm font-semibold text-zinc-600 hover:text-blue-600 hover:bg-blue-50 transition-all">스토리</a>
+                    <a href="#weapons" class="nav-link px-4 py-2 rounded-full text-sm font-semibold text-zinc-600 hover:text-blue-600 hover:bg-blue-50 transition-all">3대 무기</a>
+                    <a href="#personas" class="nav-link px-4 py-2 rounded-full text-sm font-semibold text-zinc-600 hover:text-blue-600 hover:bg-blue-50 transition-all">솔루션</a>
+                    <a href="#catalog" class="nav-link px-4 py-2 rounded-full text-sm font-semibold text-zinc-600 hover:text-blue-600 hover:bg-blue-50 transition-all">카탈로그</a>
+                    <a href="#faq" class="nav-link px-4 py-2 rounded-full text-sm font-semibold text-zinc-600 hover:text-blue-600 hover:bg-blue-50 transition-all">FAQ</a>
+                </nav>
 
-            <div class="mt-auto">
-                <button onclick="openModal()"
-                    class="w-full bg-blue-600 text-white py-4 rounded-2xl font-bold text-sm shadow-xl shadow-blue-100 hover:bg-blue-700 transition-all transform hover:-translate-y-1">
-                    파트너 신청하기
-                </button>
+                <!-- CTA Button & Mobile Toggle -->
+                <div class="flex items-center gap-3">
+                    <button onclick="openModal()"
+                        class="bg-blue-600 text-white px-4 py-2 md:px-6 md:py-2.5 rounded-full text-sm font-bold hover:bg-blue-700 transition-all shadow-lg shadow-blue-100">
+                        파트너 신청
+                    </button>
+                    <button id="menuToggle" class="md:hidden p-2 rounded-xl hover:bg-zinc-100 transition-colors" aria-label="메뉴 열기">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
             </div>
         </div>
-    </nav>
 
-    <!-- Mobile Header -->
-    <header
-        class="lg:hidden fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md border-b border-zinc-100 p-4 flex justify-between items-center z-40">
-        <h1 class="text-2xl font-black text-blue-600 tracking-tighter">SPOT.</h1>
-        <button id="menuToggle" class="p-2"><i data-lucide="menu"></i></button>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="md:hidden hidden border-t border-zinc-100 bg-white">
+            <nav class="px-4 py-4 space-y-1">
+                <a href="#story" class="mobile-nav-link block px-4 py-3 rounded-xl text-zinc-600 font-semibold hover:bg-zinc-50 transition-colors">브랜드 스토리</a>
+                <a href="#weapons" class="mobile-nav-link block px-4 py-3 rounded-xl text-zinc-600 font-semibold hover:bg-zinc-50 transition-colors">3대 무기</a>
+                <a href="#personas" class="mobile-nav-link block px-4 py-3 rounded-xl text-zinc-600 font-semibold hover:bg-zinc-50 transition-colors">3대 솔루션</a>
+                <a href="#catalog" class="mobile-nav-link block px-4 py-3 rounded-xl text-zinc-600 font-semibold hover:bg-zinc-50 transition-colors">시크릿 카탈로그</a>
+                <a href="#faq" class="mobile-nav-link block px-4 py-3 rounded-xl text-zinc-600 font-semibold hover:bg-zinc-50 transition-colors">자주 묻는 질문</a>
+            </nav>
+        </div>
     </header>
 
-    <main class="lg:ml-64 min-h-screen relative z-10 w-full overflow-x-hidden">
+    <main class="min-h-screen relative z-10 w-full overflow-x-hidden">
 
         <!-- Background Noise & Filters - Hidden on Mobile -->
         <svg class="fixed top-0 left-0 w-full h-full opacity-40 pointer-events-none z-0 mix-blend-multiply hidden md:block" aria-hidden="true">
@@ -113,16 +107,6 @@
             </filter>
             <rect width="100%" height="100%" filter="url(#noise)" />
         </svg>
-
-        <!-- Navigation - Hidden on Mobile (uses sidebar) -->
-        <nav class="absolute top-0 left-0 w-full p-6 justify-between items-center z-40 hidden lg:flex" aria-label="Main navigation">
-            <div class="text-2xl font-black tracking-tight" style="font-family: 'DM Serif Display', serif;">SPOT.</div>
-            <button onclick="openModal()"
-                class="px-6 py-3 border-2 border-black rounded-full text-sm font-bold hover:bg-black hover:text-white transition-colors uppercase tracking-wider"
-                aria-label="파트너 신청하기">
-                파트너 신청
-            </button>
-        </nav>
 
         <div class="relative">
 
