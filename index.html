@@ -44,23 +44,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-white text-zinc-900 overflow-x-hidden font-pretendard">
+<body class="bg-white text-zinc-900 overflow-x-hidden">
 
     <!-- Global Cinematic Background - Hidden on Mobile for Performance -->
     <div class="fixed inset-0 z-0 pointer-events-none overflow-hidden hidden md:block">
         <div class="absolute inset-0 bg-white/90 z-10 backdrop-blur-[2px]"></div>
         <div class="grid grid-cols-3 gap-4 opacity-20 transform -rotate-12 scale-150 animate-slow-pan">
-            <img src="spot-assets/제주산방_001.jpg" alt="" class="w-full h-96 object-cover rounded-3xl grayscale" loading="lazy">
-            <img src="spot-assets/고기국수 사진2.jpg" alt="" class="w-full h-96 object-cover rounded-3xl grayscale" loading="lazy">
-            <img src="spot-assets/산방만두-고기5개 (1) (1).jpg" alt="" class="w-full h-96 object-cover rounded-3xl grayscale" loading="lazy">
-            <img src="spot-assets/김치찌개 (4).jpg" alt="" class="w-full h-96 object-cover rounded-3xl grayscale" loading="lazy">
-            <img src="spot-assets/제주산방_001.jpg" alt="" class="w-full h-96 object-cover rounded-3xl grayscale" loading="lazy">
-            <img src="spot-assets/고기국수 사진2.jpg" alt="" class="w-full h-96 object-cover rounded-3xl grayscale" loading="lazy">
+            <img src="spot-assets/제주산방_001.jpg" alt="" class="w-full h-96 object-cover rounded-3xl grayscale"
+                loading="lazy">
+            <img src="spot-assets/고기국수 사진2.jpg" alt="" class="w-full h-96 object-cover rounded-3xl grayscale"
+                loading="lazy">
+            <img src="spot-assets/산방만두-고기5개 (1) (1).jpg" alt="" class="w-full h-96 object-cover rounded-3xl grayscale"
+                loading="lazy">
+            <img src="spot-assets/김치찌개 (4).jpg" alt="" class="w-full h-96 object-cover rounded-3xl grayscale"
+                loading="lazy">
+            <img src="spot-assets/제주산방_001.jpg" alt="" class="w-full h-96 object-cover rounded-3xl grayscale"
+                loading="lazy">
+            <img src="spot-assets/고기국수 사진2.jpg" alt="" class="w-full h-96 object-cover rounded-3xl grayscale"
+                loading="lazy">
         </div>
     </div>
 
     <!-- Top Navigation -->
-    <header id="topNav" class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-md border-b border-zinc-100 z-50 transition-all">
+    <header id="topNav"
+        class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-md border-b border-zinc-100 z-50 transition-all">
         <div class="max-w-7xl mx-auto px-4 md:px-8">
             <div class="flex justify-between items-center h-16 md:h-20">
                 <!-- Logo -->
@@ -70,12 +77,19 @@
 
                 <!-- Desktop Navigation -->
                 <nav class="hidden md:flex items-center gap-1" aria-label="Main navigation">
-                    <a href="#story" class="nav-link px-4 py-2 rounded-full text-sm font-semibold text-zinc-600 hover:text-blue-600 hover:bg-blue-50 transition-all">스토리</a>
-                    <a href="#exclusive-products" class="nav-link px-4 py-2 rounded-full text-sm font-semibold text-zinc-600 hover:text-blue-600 hover:bg-blue-50 transition-all">전용상품</a>
-                    <a href="#weapons" class="nav-link px-4 py-2 rounded-full text-sm font-semibold text-zinc-600 hover:text-blue-600 hover:bg-blue-50 transition-all">3대 무기</a>
-                    <a href="#personas" class="nav-link px-4 py-2 rounded-full text-sm font-semibold text-zinc-600 hover:text-blue-600 hover:bg-blue-50 transition-all">솔루션</a>
-                    <a href="#catalog" class="nav-link px-4 py-2 rounded-full text-sm font-semibold text-zinc-600 hover:text-blue-600 hover:bg-blue-50 transition-all">카탈로그</a>
-                    <a href="#faq" class="nav-link px-4 py-2 rounded-full text-sm font-semibold text-zinc-600 hover:text-blue-600 hover:bg-blue-50 transition-all">FAQ</a>
+                    <a href="#story"
+                        class="nav-link px-4 py-2 rounded-full text-sm font-semibold text-zinc-600 hover:text-blue-600 hover:bg-blue-50 transition-all">스토리</a>
+                    <a href="#exclusive-products"
+                        class="nav-link px-4 py-2 rounded-full text-sm font-semibold text-zinc-600 hover:text-blue-600 hover:bg-blue-50 transition-all">전용상품</a>
+                    <a href="#weapons"
+                        class="nav-link px-4 py-2 rounded-full text-sm font-semibold text-zinc-600 hover:text-blue-600 hover:bg-blue-50 transition-all">3대
+                        무기</a>
+                    <a href="#personas"
+                        class="nav-link px-4 py-2 rounded-full text-sm font-semibold text-zinc-600 hover:text-blue-600 hover:bg-blue-50 transition-all">솔루션</a>
+                    <a href="#catalog"
+                        class="nav-link px-4 py-2 rounded-full text-sm font-semibold text-zinc-600 hover:text-blue-600 hover:bg-blue-50 transition-all">카탈로그</a>
+                    <a href="#faq"
+                        class="nav-link px-4 py-2 rounded-full text-sm font-semibold text-zinc-600 hover:text-blue-600 hover:bg-blue-50 transition-all">FAQ</a>
                 </nav>
 
                 <!-- CTA Button & Mobile Toggle -->
@@ -84,7 +98,8 @@
                         class="bg-blue-600 text-white px-4 py-2 md:px-6 md:py-2.5 rounded-full text-sm font-bold hover:bg-blue-700 transition-all shadow-lg shadow-blue-100">
                         파트너 신청
                     </button>
-                    <button id="menuToggle" class="md:hidden p-2 rounded-xl hover:bg-zinc-100 transition-colors" aria-label="메뉴 열기">
+                    <button id="menuToggle" class="md:hidden p-2 rounded-xl hover:bg-zinc-100 transition-colors"
+                        aria-label="메뉴 열기">
                         <i data-lucide="menu" class="w-6 h-6"></i>
                     </button>
                 </div>
@@ -94,12 +109,23 @@
         <!-- Mobile Menu -->
         <div id="mobileMenu" class="md:hidden hidden border-t border-zinc-100 bg-white">
             <nav class="px-4 py-4 space-y-1">
-                <a href="#story" class="mobile-nav-link block px-4 py-3 rounded-xl text-zinc-600 font-semibold hover:bg-zinc-50 transition-colors">브랜드 스토리</a>
-                <a href="#exclusive-products" class="mobile-nav-link block px-4 py-3 rounded-xl text-zinc-600 font-semibold hover:bg-zinc-50 transition-colors">전용상품</a>
-                <a href="#weapons" class="mobile-nav-link block px-4 py-3 rounded-xl text-zinc-600 font-semibold hover:bg-zinc-50 transition-colors">3대 무기</a>
-                <a href="#personas" class="mobile-nav-link block px-4 py-3 rounded-xl text-zinc-600 font-semibold hover:bg-zinc-50 transition-colors">3대 솔루션</a>
-                <a href="#catalog" class="mobile-nav-link block px-4 py-3 rounded-xl text-zinc-600 font-semibold hover:bg-zinc-50 transition-colors">시크릿 카탈로그</a>
-                <a href="#faq" class="mobile-nav-link block px-4 py-3 rounded-xl text-zinc-600 font-semibold hover:bg-zinc-50 transition-colors">자주 묻는 질문</a>
+                <a href="#story"
+                    class="mobile-nav-link block px-4 py-3 rounded-xl text-zinc-600 font-semibold hover:bg-zinc-50 transition-colors">브랜드
+                    스토리</a>
+                <a href="#exclusive-products"
+                    class="mobile-nav-link block px-4 py-3 rounded-xl text-zinc-600 font-semibold hover:bg-zinc-50 transition-colors">전용상품</a>
+                <a href="#weapons"
+                    class="mobile-nav-link block px-4 py-3 rounded-xl text-zinc-600 font-semibold hover:bg-zinc-50 transition-colors">3대
+                    무기</a>
+                <a href="#personas"
+                    class="mobile-nav-link block px-4 py-3 rounded-xl text-zinc-600 font-semibold hover:bg-zinc-50 transition-colors">3대
+                    솔루션</a>
+                <a href="#catalog"
+                    class="mobile-nav-link block px-4 py-3 rounded-xl text-zinc-600 font-semibold hover:bg-zinc-50 transition-colors">시크릿
+                    카탈로그</a>
+                <a href="#faq"
+                    class="mobile-nav-link block px-4 py-3 rounded-xl text-zinc-600 font-semibold hover:bg-zinc-50 transition-colors">자주
+                    묻는 질문</a>
             </nav>
         </div>
     </header>
@@ -107,7 +133,8 @@
     <main class="min-h-screen relative z-10 w-full overflow-x-hidden">
 
         <!-- Background Noise & Filters - Hidden on Mobile -->
-        <svg class="fixed top-0 left-0 w-full h-full opacity-40 pointer-events-none z-0 mix-blend-multiply hidden md:block" aria-hidden="true">
+        <svg class="fixed top-0 left-0 w-full h-full opacity-40 pointer-events-none z-0 mix-blend-multiply hidden md:block"
+            aria-hidden="true">
             <filter id="noise">
                 <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch" />
             </filter>
@@ -121,7 +148,8 @@
                 class="relative min-h-screen flex flex-col items-center justify-center pt-24 md:pt-32 pb-16 md:pb-20 px-4 overflow-hidden">
                 <div class="absolute inset-0 z-0">
                     <!-- Video hidden on mobile for performance -->
-                    <video autoplay loop muted playsinline class="w-full h-full object-cover opacity-20 hidden md:block">
+                    <video autoplay loop muted playsinline
+                        class="w-full h-full object-cover opacity-20 hidden md:block">
                         <source src="spot-assets/SPOT_HERO.mp4" type="video/mp4">
                     </video>
                     <div class="absolute inset-0 bg-gradient-to-b from-white/90 via-white/80 to-white/90"></div>
@@ -173,9 +201,9 @@
 
 
             <!-- Brand Story Section -->
-            <section id="story" class="py-32 px-8 lg:px-24 border-t border-zinc-100">
+            <section id="story" class="py-20 px-5 md:py-32 md:px-8 lg:px-24 border-t border-zinc-100">
                 <div class="max-w-5xl mx-auto">
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                         <div class="space-y-8">
                             <span class="text-blue-600 font-black tracking-widest text-xs uppercase">Philosophy</span>
                             <h2 class="text-4xl font-bold leading-snug">검증된 맛집의 노하우를<br>당신의 브랜드에 이식합니다.</h2>
@@ -191,14 +219,15 @@
                         </div>
                         <div class="relative">
                             <img src="spot-assets/제주산방_001.jpg" alt="제주산방 매장"
-                                class="rounded-[40px] shadow-2xl grayscale object-cover h-[400px] md:h-[500px] w-full" loading="lazy">
+                                class="rounded-[40px] shadow-2xl grayscale object-cover h-[400px] md:h-[500px] w-full"
+                                loading="lazy">
                         </div>
                     </div>
                 </div>
             </section>
 
             <!-- 문제제기 섹션: Why SPOT? -->
-            <section class="py-32 px-8 lg:px-24 bg-zinc-900 text-white">
+            <section class="py-20 px-5 md:py-32 md:px-8 lg:px-24 bg-zinc-900 text-white">
                 <div class="max-w-6xl mx-auto">
                     <div class="text-center mb-16">
                         <span class="text-blue-400 font-black tracking-widest text-xs uppercase">Why SPOT?</span>
@@ -290,7 +319,7 @@
             </section>
 
             <!-- 신뢰할 수 있는 파트너 섹션 -->
-            <section class="py-32 px-8 lg:px-24">
+            <section class="py-20 px-5 md:py-32 md:px-8 lg:px-24">
                 <div class="max-w-6xl mx-auto">
                     <div class="text-center mb-16">
                         <span class="text-blue-600 font-black tracking-widest text-xs uppercase">Trusted Partners</span>
@@ -303,7 +332,7 @@
 
                     <!-- 차별점 강조 -->
                     <div class="bg-blue-50 p-8 lg:p-12 rounded-[40px] mb-16">
-                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                             <div class="space-y-6">
                                 <h3 class="text-2xl font-bold text-zinc-900">일반 범용상품이 아닌,<br>직영점에서 사용하는 <span
                                         class="text-blue-600">'전용상품'</span></h3>
@@ -385,7 +414,8 @@
                                 </div>
                                 <div class="flex justify-center mb-6">
                                     <img src="spot-assets/SPOT_Secret Ingredient Delivery.png" alt="육가공"
-                                        class="w-36 h-36 object-contain group-hover:scale-110 transition-transform duration-300" loading="lazy">
+                                        class="w-36 h-36 object-contain group-hover:scale-110 transition-transform duration-300"
+                                        loading="lazy">
                                 </div>
                                 <h4 class="text-xl font-bold mb-3 text-center relative z-10">육가공업체</h4>
                                 <p class="text-zinc-500 text-sm leading-relaxed text-center relative z-10">
@@ -401,7 +431,8 @@
                                 </div>
                                 <div class="flex justify-center mb-6">
                                     <img src="spot-assets/SPOT_Secret Ingredient Delivery2.png" alt="소스제조"
-                                        class="w-36 h-36 object-contain group-hover:scale-110 transition-transform duration-300" loading="lazy">
+                                        class="w-36 h-36 object-contain group-hover:scale-110 transition-transform duration-300"
+                                        loading="lazy">
                                 </div>
                                 <h4 class="text-xl font-bold mb-3 text-center relative z-10">소스제조사</h4>
                                 <p class="text-zinc-500 text-sm leading-relaxed text-center relative z-10">
@@ -417,7 +448,8 @@
                                 </div>
                                 <div class="flex justify-center mb-6">
                                     <img src="spot-assets/SPOT_LOGISTICS.png" alt="물류"
-                                        class="w-36 h-36 object-contain group-hover:scale-110 transition-transform duration-300" loading="lazy">
+                                        class="w-36 h-36 object-contain group-hover:scale-110 transition-transform duration-300"
+                                        loading="lazy">
                                 </div>
                                 <h4 class="text-xl font-bold mb-3 text-center relative z-10">물류사</h4>
                                 <p class="text-zinc-500 text-sm leading-relaxed text-center relative z-10">
@@ -459,7 +491,7 @@
             </section>
 
             <!-- SPOT 3대 무기 섹션 -->
-            <section id="weapons" class="py-32 px-8 lg:px-24 bg-zinc-50 border-y border-zinc-100">
+            <section id="weapons" class="py-20 px-5 md:py-32 md:px-8 lg:px-24 bg-zinc-50 border-y border-zinc-100">
                 <div class="max-w-6xl mx-auto">
                     <div class="text-center mb-20">
                         <span class="text-blue-600 font-black tracking-widest text-xs uppercase">SPOT's 3 Weapons</span>
@@ -477,7 +509,8 @@
                             </div>
                             <div class="flex justify-center mb-4">
                                 <img src="spot-assets/SPOT_sanbang.png" alt="전용 식자재"
-                                    class="w-32 h-32 object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                                    class="w-32 h-32 object-contain group-hover:scale-105 transition-transform duration-300"
+                                    loading="lazy">
                             </div>
                             <span class="text-xs font-bold text-blue-600 uppercase tracking-wider relative z-10">Weapon
                                 01</span>
@@ -502,7 +535,8 @@
                             </div>
                             <div class="flex justify-center mb-4">
                                 <img src="spot-assets/SPOT_Analysis Pose.png" alt="Playbook"
-                                    class="w-32 h-32 object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                                    class="w-32 h-32 object-contain group-hover:scale-105 transition-transform duration-300"
+                                    loading="lazy">
                             </div>
                             <span class="text-xs font-bold text-blue-600 uppercase tracking-wider relative z-10">Weapon
                                 02</span>
@@ -527,7 +561,8 @@
                             </div>
                             <div class="flex justify-center mb-4">
                                 <img src="spot-assets/SPOT_Provocation Pose.png" alt="운영 OS"
-                                    class="w-32 h-32 object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                                    class="w-32 h-32 object-contain group-hover:scale-105 transition-transform duration-300"
+                                    loading="lazy">
                             </div>
                             <span class="text-xs font-bold text-blue-600 uppercase tracking-wider relative z-10">Weapon
                                 03</span>
@@ -565,20 +600,24 @@
                                 </div>
                             </div>
                         </div>
-                        <img src="spot-assets/SPOT_LOGISTICS.png" alt="물류 시스템" class="rounded-3xl grayscale brightness-105" loading="lazy">
+                        <img src="spot-assets/SPOT_LOGISTICS.png" alt="물류 시스템"
+                            class="rounded-3xl grayscale brightness-105" loading="lazy">
                     </div>
                 </div>
             </section>
 
             <!-- 전용상품이란 무엇인가 섹션 -->
-            <section id="exclusive-products" class="py-32 px-8 lg:px-24 bg-white border-y border-zinc-100">
+            <section id="exclusive-products"
+                class="py-20 px-5 md:py-32 md:px-8 lg:px-24 bg-white border-y border-zinc-100">
                 <div class="max-w-6xl mx-auto">
                     <div class="text-center mb-16">
-                        <span class="text-blue-600 font-black tracking-widest text-xs uppercase">What is Exclusive Product?</span>
+                        <span class="text-blue-600 font-black tracking-widest text-xs uppercase">What is Exclusive
+                            Product?</span>
                         <h2 class="text-4xl font-bold mt-4 mb-6">전용상품이<br><span class="text-blue-600">경쟁력</span>입니다</h2>
                         <p class="text-zinc-500 text-lg max-w-3xl mx-auto">
                             전용상품은 일반 제조사나 물류사의 범용상품이 아닙니다.<br>
-                            <strong class="text-zinc-900">수십 년의 노하우</strong>와 <strong class="text-zinc-900">독창적인 레시피</strong>를 기반으로,<br>
+                            <strong class="text-zinc-900">수십 년의 노하우</strong>와 <strong class="text-zinc-900">독창적인
+                                레시피</strong>를 기반으로,<br>
                             비밀유지 계약 아래 수십 번의 테스트를 거쳐 탄생한<br>
                             <span class="text-blue-600 font-bold">맛집의 필수요소</span>입니다.
                         </p>
@@ -588,7 +627,8 @@
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
                         <div class="group relative overflow-hidden rounded-3xl aspect-square">
                             <img src="spot-assets/산방육수.png" alt="전용 육수"
-                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                loading="lazy">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                             <div class="absolute bottom-4 left-4 text-white">
                                 <p class="text-xs font-bold text-blue-300 uppercase tracking-wider">Secret 01</p>
@@ -597,7 +637,8 @@
                         </div>
                         <div class="group relative overflow-hidden rounded-3xl aspect-square">
                             <img src="spot-assets/양념장.png" alt="비빔장·양념장"
-                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                loading="lazy">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                             <div class="absolute bottom-4 left-4 text-white">
                                 <p class="text-xs font-bold text-blue-300 uppercase tracking-wider">Secret 02</p>
@@ -606,7 +647,8 @@
                         </div>
                         <div class="group relative overflow-hidden rounded-3xl aspect-square">
                             <img src="spot-assets/면삶는거.png" alt="전용 생면"
-                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                loading="lazy">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                             <div class="absolute bottom-4 left-4 text-white">
                                 <p class="text-xs font-bold text-blue-300 uppercase tracking-wider">Secret 03</p>
@@ -615,7 +657,8 @@
                         </div>
                         <div class="group relative overflow-hidden rounded-3xl aspect-square">
                             <img src="spot-assets/면만지는거.png" alt="수제 면 공정"
-                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                loading="lazy">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                             <div class="absolute bottom-4 left-4 text-white">
                                 <p class="text-xs font-bold text-blue-300 uppercase tracking-wider">Secret 04</p>
@@ -628,13 +671,15 @@
                     <div class="bg-zinc-100 p-8 lg:p-12 rounded-[40px] mb-16">
                         <div class="text-center mb-10">
                             <p class="text-blue-600 font-bold text-sm uppercase tracking-widest mb-2">And More...</p>
-                            <h3 class="text-2xl md:text-3xl font-bold text-zinc-900">업종별 <span class="text-blue-600">수십 가지</span> 전용상품</h3>
+                            <h3 class="text-2xl md:text-3xl font-bold text-zinc-900">업종별 <span class="text-blue-600">수십
+                                    가지</span> 전용상품</h3>
                             <p class="text-zinc-500 mt-3">경쟁력과 시간이 녹아있는 SPOT만의 비밀 무기들</p>
                         </div>
 
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                             <!-- 피자도우 -->
-                            <div class="bg-white p-6 rounded-2xl hover:shadow-lg transition-all group border border-zinc-200">
+                            <div
+                                class="bg-white p-6 rounded-2xl hover:shadow-lg transition-all group border border-zinc-200">
                                 <div class="w-16 h-16 mb-4 group-hover:scale-110 transition-transform">
                                     <img src="spot-assets/피자아이콘.png" alt="피자" class="w-full h-full object-contain">
                                 </div>
@@ -645,24 +690,28 @@
                             </div>
 
                             <!-- 브랜드육 -->
-                            <div class="bg-white p-6 rounded-2xl hover:shadow-lg transition-all group border border-zinc-200">
+                            <div
+                                class="bg-white p-6 rounded-2xl hover:shadow-lg transition-all group border border-zinc-200">
                                 <div class="w-16 h-16 mb-4 group-hover:scale-110 transition-transform">
                                     <img src="spot-assets/고기아이콘.png" alt="고기" class="w-full h-full object-contain">
                                 </div>
                                 <h4 class="font-bold text-lg mb-2 text-zinc-900">국내 브랜드육</h4>
                                 <p class="text-zinc-500 text-sm leading-relaxed">
-                                    도드람, 선진, 하이포크 등 <span class="text-zinc-900 font-semibold">브랜드육만 취급</span>하는 국내 브랜드사의 원육을 경쟁력 있는 단가로 공급.
+                                    도드람, 선진, 하이포크 등 <span class="text-zinc-900 font-semibold">브랜드육만 취급</span>하는 국내 브랜드사의
+                                    원육을 경쟁력 있는 단가로 공급.
                                 </p>
                             </div>
 
                             <!-- 카페 베이스 -->
-                            <div class="bg-white p-6 rounded-2xl hover:shadow-lg transition-all group border border-zinc-200">
+                            <div
+                                class="bg-white p-6 rounded-2xl hover:shadow-lg transition-all group border border-zinc-200">
                                 <div class="w-16 h-16 mb-4 group-hover:scale-110 transition-transform">
                                     <img src="spot-assets/카페아이콘.png" alt="카페" class="w-full h-full object-contain">
                                 </div>
                                 <h4 class="font-bold text-lg mb-2 text-zinc-900">카페 브랜드 베이스</h4>
                                 <p class="text-zinc-500 text-sm leading-relaxed">
-                                    웨이팅을 버티지 못해 <span class="text-zinc-900 font-semibold">6개월간 제조사와 준비</span>한 음료 베이스, 반죽 베이스, 밀크티 펄 등.
+                                    웨이팅을 버티지 못해 <span class="text-zinc-900 font-semibold">6개월간 제조사와 준비</span>한 음료 베이스,
+                                    반죽 베이스, 밀크티 펄 등.
                                 </p>
                             </div>
                         </div>
@@ -733,7 +782,7 @@
 
                     <!-- 성장 경로: 나만의 전용상품까지 -->
                     <div class="bg-gradient-to-r from-blue-600 to-blue-700 p-8 lg:p-12 rounded-[40px] text-white">
-                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                             <div class="space-y-6">
                                 <div class="inline-block bg-white/20 px-4 py-2 rounded-full text-sm font-bold">
                                     SPOT의 궁극적인 목표
@@ -752,7 +801,9 @@
                                 <!-- 성장 단계 -->
                                 <div class="space-y-4 w-full max-w-sm">
                                     <div class="flex items-center gap-4 bg-white/10 p-4 rounded-2xl">
-                                        <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center font-bold">1</div>
+                                        <div
+                                            class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center font-bold">
+                                            1</div>
                                         <div>
                                             <p class="font-bold">SPOT 전용상품 도입</p>
                                             <p class="text-xs text-blue-200">검증된 맛집의 전용상품으로 시작</p>
@@ -762,7 +813,9 @@
                                         <i data-lucide="arrow-down" class="w-5 h-5 text-blue-300"></i>
                                     </div>
                                     <div class="flex items-center gap-4 bg-white/10 p-4 rounded-2xl">
-                                        <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center font-bold">2</div>
+                                        <div
+                                            class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center font-bold">
+                                            2</div>
                                         <div>
                                             <p class="font-bold">매출 성장 & 물량 증가</p>
                                             <p class="text-xs text-blue-200">내 브랜드 인지도 상승</p>
@@ -772,7 +825,9 @@
                                         <i data-lucide="arrow-down" class="w-5 h-5 text-blue-300"></i>
                                     </div>
                                     <div class="flex items-center gap-4 bg-white p-4 rounded-2xl text-blue-600">
-                                        <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center font-bold">3</div>
+                                        <div
+                                            class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center font-bold">
+                                            3</div>
                                         <div>
                                             <p class="font-bold">나만의 전용상품 개발</p>
                                             <p class="text-xs text-blue-400">제조사 직접 연결 & 브랜드 완성</p>
@@ -786,7 +841,7 @@
             </section>
 
             <!-- 전용상품 베이스 섹션 -->
-            <section class="py-32 px-8 lg:px-24 bg-zinc-50 border-y border-zinc-100">
+            <section class="py-20 px-5 md:py-32 md:px-8 lg:px-24 bg-zinc-50 border-y border-zinc-100">
                 <div class="max-w-6xl mx-auto">
                     <div class="text-center mb-16">
                         <span class="text-blue-600 font-black tracking-widest text-xs uppercase">Exclusive Base
@@ -801,7 +856,7 @@
 
                     <!-- 베이스 확장 예시 -->
                     <div class="bg-gradient-to-br from-blue-50 to-zinc-50 p-8 lg:p-12 rounded-[40px] mb-12">
-                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                             <!-- 왼쪽: 베이스 소스 -->
                             <div class="text-center lg:text-left">
                                 <div
@@ -880,7 +935,7 @@
             </section>
 
             <!-- 줄서는 매장들의 무기 섹션 -->
-            <section class="py-32 px-8 lg:px-24 bg-zinc-900 text-white">
+            <section class="py-20 px-5 md:py-32 md:px-8 lg:px-24 bg-zinc-900 text-white">
                 <div class="max-w-6xl mx-auto">
                     <div class="text-center mb-16">
                         <span class="text-blue-400 font-black tracking-widest text-xs uppercase">Exclusive Products by
@@ -993,7 +1048,7 @@
             </section>
 
             <!-- 3 Persona Solutions -->
-            <section id="personas" class="py-32 px-8 lg:px-24">
+            <section id="personas" class="py-20 px-5 md:py-32 md:px-8 lg:px-24">
                 <div class="max-w-6xl mx-auto">
                     <div class="text-center mb-20">
                         <span class="text-blue-600 font-black tracking-widest text-xs uppercase">Target Solutions</span>
@@ -1006,9 +1061,9 @@
             </section>
 
             <!-- 적합/비적합 섹션 -->
-            <section class="py-32 px-8 lg:px-24 bg-zinc-50">
+            <section class="py-20 px-5 md:py-32 md:px-8 lg:px-24 bg-zinc-50">
                 <div class="max-w-5xl mx-auto">
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
                         <!-- 적합한 분 -->
                         <div class="bg-white p-10 rounded-[40px] border border-zinc-100 shadow-lg">
                             <div class="flex items-center gap-3 mb-8">
@@ -1073,19 +1128,20 @@
 
             <!-- Secret Catalog (Locked Content) -->
             <section id="catalog"
-                class="py-32 bg-zinc-900 text-white rounded-[60px] mx-4 lg:mx-8 overflow-hidden relative">
+                class="py-20 md:py-32 bg-zinc-900 text-white rounded-[40px] md:rounded-[60px] mx-4 lg:mx-8 overflow-hidden relative">
                 <div class="absolute inset-0 opacity-20 pointer-events-none">
                     <video autoplay loop muted playsinline class="w-full h-full object-cover">
                         <source src="spot-assets/18_줄서기3.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="max-w-5xl mx-auto px-8 relative z-10 text-center">
-                    <h2 class="text-4xl font-bold mb-6">시크릿 브랜드 카탈로그</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">시크릿 브랜드 카탈로그</h2>
                     <p class="text-zinc-400 text-lg mb-16 max-w-2xl mx-auto">현재 공급 중인 50년 한식 명가, 로컬 핫플 등의 상세 리스트는 파트너십
                         상권 보호를 위해 잠금 처리되어 있습니다.</p>
 
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
-                        <div class="catalog-item aspect-square bg-zinc-800 rounded-3xl flex items-center justify-center relative group overflow-hidden">
+                        <div
+                            class="catalog-item aspect-square bg-zinc-800 rounded-3xl flex items-center justify-center relative group overflow-hidden">
                             <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover">
                                 <source src="spot-assets/18_줄서기3.mp4" type="video/mp4">
                             </video>
@@ -1127,7 +1183,8 @@
                             </div>
                             <p class="absolute bottom-4 text-xs font-bold text-white/50 z-10">면 삶기</p>
                         </div>
-                        <div class="catalog-item aspect-square bg-zinc-800 rounded-3xl flex items-center justify-center relative group overflow-hidden">
+                        <div
+                            class="catalog-item aspect-square bg-zinc-800 rounded-3xl flex items-center justify-center relative group overflow-hidden">
                             <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover">
                                 <source src="spot-assets/줄서기 모슬포2.mp4" type="video/mp4">
                             </video>
@@ -1163,11 +1220,12 @@
             </section>
 
             <!-- 파트너 혜택 섹션 -->
-            <section class="py-32 px-8 lg:px-24">
-                <div class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-20 items-center">
+            <section class="py-20 px-5 md:py-32 md:px-8 lg:px-24">
+                <div class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
                     <div class="lg:w-1/2 order-2 lg:order-1">
                         <img src="spot-assets/산방만두-고기5개 (1) (1).jpg" alt="산방만두"
-                            class="rounded-[40px] shadow-2xl grayscale object-cover h-[400px] md:h-[500px] w-full" loading="lazy">
+                            class="rounded-[40px] shadow-2xl grayscale object-cover h-[400px] md:h-[500px] w-full"
+                            loading="lazy">
                     </div>
                     <div class="lg:w-1/2 order-1 lg:order-2 space-y-8">
                         <span class="text-blue-600 font-black tracking-widest text-xs uppercase">Partner Benefits</span>
@@ -1187,15 +1245,17 @@
             </section>
 
             <!-- 교육 및 비용 안내 섹션 -->
-            <section class="py-32 px-8 lg:px-24 bg-gradient-to-b from-blue-600 to-blue-700 text-white relative overflow-hidden">
+            <section
+                class="py-20 px-5 md:py-32 md:px-8 lg:px-24 bg-gradient-to-b from-blue-600 to-blue-700 text-white relative overflow-hidden">
                 <div class="absolute inset-0 opacity-10">
                     <div class="absolute top-10 left-10 w-64 h-64 bg-white rounded-full blur-3xl"></div>
                     <div class="absolute bottom-10 right-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
                 </div>
                 <div class="max-w-4xl mx-auto relative z-10">
                     <div class="text-center mb-12">
-                        <span class="inline-block px-4 py-2 bg-white/20 rounded-full text-sm font-bold mb-6">단 1번의 투자</span>
-                        <h2 class="text-4xl lg:text-5xl font-bold mb-6">효과를 극대화하려면<br>딱 한 번의 비용이 필요합니다</h2>
+                        <span class="inline-block px-4 py-2 bg-white/20 rounded-full text-sm font-bold mb-6">단 1번의
+                            투자</span>
+                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">효과를 극대화하려면<br>딱 한 번의 비용이 필요합니다</h2>
                     </div>
 
                     <div class="bg-white rounded-[40px] p-8 lg:p-12 text-zinc-900 shadow-2xl">
@@ -1206,7 +1266,8 @@
                                 <p class="text-zinc-500 mb-6">해당 브랜드의 실제 직영점에서 진행됩니다.</p>
                                 <ul class="space-y-4">
                                     <li class="flex items-start gap-3">
-                                        <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                                        <div
+                                            class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
                                             <i data-lucide="map" class="w-4 h-4 text-blue-600"></i>
                                         </div>
                                         <div>
@@ -1215,7 +1276,8 @@
                                         </div>
                                     </li>
                                     <li class="flex items-start gap-3">
-                                        <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                                        <div
+                                            class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
                                             <i data-lucide="settings" class="w-4 h-4 text-blue-600"></i>
                                         </div>
                                         <div>
@@ -1224,7 +1286,8 @@
                                         </div>
                                     </li>
                                     <li class="flex items-start gap-3">
-                                        <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                                        <div
+                                            class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
                                             <i data-lucide="chef-hat" class="w-4 h-4 text-blue-600"></i>
                                         </div>
                                         <div>
@@ -1240,13 +1303,16 @@
                                 <p class="text-sm font-bold text-zinc-400 mb-2">메뉴 컨설팅 + 현장 교육</p>
                                 <div class="mb-4">
                                     <span class="text-2xl text-zinc-400 line-through">300만원</span>
-                                    <span class="ml-2 px-3 py-1 bg-red-500 text-white text-sm font-bold rounded-full">80% OFF</span>
+                                    <span
+                                        class="ml-2 px-3 py-1 bg-red-500 text-white text-sm font-bold rounded-full">80%
+                                        OFF</span>
                                 </div>
                                 <div class="mb-6">
                                     <span class="text-6xl font-black text-blue-600">60</span>
                                     <span class="text-2xl font-bold text-zinc-900">만원</span>
                                 </div>
-                                <div class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-bold inline-block">
+                                <div
+                                    class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-bold inline-block">
                                     평생 단 1회 비용
                                 </div>
                             </div>
@@ -1263,7 +1329,7 @@
             </section>
 
             <!-- FAQ Section -->
-            <section id="faq" class="py-32 px-8 lg:px-24">
+            <section id="faq" class="py-20 px-5 md:py-32 md:px-8 lg:px-24">
                 <div class="max-w-3xl mx-auto">
                     <div class="text-center mb-16">
                         <h2 class="text-3xl font-bold mb-4">자주 묻는 질문</h2>
@@ -1285,10 +1351,10 @@
             </section>
 
             <!-- SPOT 정의 섹션 -->
-            <section class="py-32 px-8 lg:px-24 bg-zinc-900 text-white">
+            <section class="py-20 px-5 md:py-32 md:px-8 lg:px-24 bg-zinc-900 text-white">
                 <div class="max-w-4xl mx-auto text-center">
                     <span class="text-blue-400 font-black tracking-widest text-xs uppercase">What is SPOT?</span>
-                    <h2 class="text-4xl lg:text-5xl font-bold mt-6 mb-8 leading-tight">
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mt-6 mb-8 leading-tight">
                         SPOT은<br>
                         <span class="text-blue-400">S</span>ystem <span class="text-blue-400">P</span>rovider <span
                             class="text-blue-400">o</span>f <span class="text-blue-400">T</span>otal Solution
@@ -1333,10 +1399,11 @@
             </section>
 
             <!-- Final CTA Footer -->
-            <footer class="bg-zinc-50 py-32 px-8 lg:px-24 border-t border-zinc-200">
+            <footer class="bg-zinc-50 py-20 px-5 md:py-32 md:px-8 lg:px-24 border-t border-zinc-200">
                 <div class="max-w-4xl mx-auto text-center">
                     <img src="spot-assets/SPOT_Support Pose.png" alt="SPOT 지원"
-                        class="w-48 mx-auto mb-12 rounded-full border-8 border-white shadow-2xl grayscale" loading="lazy">
+                        class="w-48 mx-auto mb-12 rounded-full border-8 border-white shadow-2xl grayscale"
+                        loading="lazy">
                     <h2 class="text-4xl font-bold mb-8">검증된 맛집의 노하우로,<br>우리동네 명소를 만드세요.</h2>
                     <button onclick="openModal()"
                         class="bg-blue-600 text-white px-12 py-5 rounded-3xl font-bold text-xl hover:bg-blue-700 transition-all shadow-xl shadow-blue-100">지금
@@ -1362,59 +1429,59 @@
         class="fixed inset-0 bg-black/60 backdrop-blur-md z-[100] hidden items-center justify-center p-4">
         <div onclick="event.stopPropagation()"
             class="bg-white rounded-[40px] max-w-xl w-full p-6 md:p-10 relative animate-modal-in shadow-2xl max-h-[90vh] overflow-y-auto">
-                <button onclick="closeModal()"
-                    class="absolute top-8 right-8 text-zinc-400 hover:text-zinc-900 transition-all"><i
-                        data-lucide="x"></i></button>
-                <h3 class="text-3xl font-black mb-2 text-center text-blue-600">SPOT Partner Link</h3>
-                <p class="text-zinc-500 mb-8 text-center text-sm font-medium leading-relaxed">신청해 주시면 확인 후
-                    <br><span class="text-zinc-900 font-bold underline">순차적으로 연락드리겠습니다.</span>
-                </p>
-                <form id="consultForm" action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
-                    <!-- Web3Forms Access Key - https://web3forms.com 에서 발급 -->
-                    <input type="hidden" name="access_key" value="40c5042b-41e8-49fc-a64f-f404ce51de0d">
-                    <input type="hidden" name="subject" value="[SPOT] 새로운 파트너 신청">
-                    <input type="hidden" name="from_name" value="SPOT 파트너 신청">
+            <button onclick="closeModal()"
+                class="absolute top-8 right-8 text-zinc-400 hover:text-zinc-900 transition-all"><i
+                    data-lucide="x"></i></button>
+            <h3 class="text-3xl font-black mb-2 text-center text-blue-600">SPOT Partner Link</h3>
+            <p class="text-zinc-500 mb-8 text-center text-sm font-medium leading-relaxed">신청해 주시면 확인 후
+                <br><span class="text-zinc-900 font-bold underline">순차적으로 연락드리겠습니다.</span>
+            </p>
+            <form id="consultForm" action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+                <!-- Web3Forms Access Key - https://web3forms.com 에서 발급 -->
+                <input type="hidden" name="access_key" value="40c5042b-41e8-49fc-a64f-f404ce51de0d">
+                <input type="hidden" name="subject" value="[SPOT] 새로운 파트너 신청">
+                <input type="hidden" name="from_name" value="SPOT 파트너 신청">
 
-                    <input type="text" name="name" placeholder="성함 / 업체명" required
-                        class="w-full bg-zinc-50 border-none rounded-2xl p-5 focus:ring-2 focus:ring-blue-600 outline-none text-sm font-bold">
-                    <input type="tel" name="phone" placeholder="연락처 (010-0000-0000)" required
-                        class="w-full bg-zinc-50 border-none rounded-2xl p-5 focus:ring-2 focus:ring-blue-600 outline-none text-sm font-bold">
-                    <select name="inquiry_type"
-                        class="w-full bg-zinc-50 border-none rounded-2xl p-5 focus:ring-2 focus:ring-blue-600 outline-none text-sm font-bold appearance-none cursor-pointer">
-                        <option value="개인 창업">개인 창업 (메뉴/레시피 니즈)</option>
-                        <option value="B2B 기업">B2B 기업 (전용 물류망 니즈)</option>
-                        <option value="단체 급식">단체 급식 / 위탁 운영</option>
-                        <option value="기타 제휴">기타 제휴</option>
-                    </select>
-                    <div class="p-4 bg-blue-50 rounded-2xl">
-                        <p class="text-[10px] text-blue-700 font-black mb-1 uppercase tracking-tighter">Information</p>
-                        <p class="text-xs text-blue-600 leading-snug">모든 거래는 투명한 <span class="font-bold underline">예치금
-                                시스템</span>으로 운영되며, 세금계산서는 출고일에 맞춰 자동 발행됩니다.</p>
-                    </div>
-                    <button type="submit"
-                        class="w-full bg-zinc-900 text-white py-5 rounded-3xl font-bold text-lg mt-4 shadow-xl hover:bg-black transition-all">파트너
-                        상담 신청하기</button>
-                </form>
-            </div>
+                <input type="text" name="name" placeholder="성함 / 업체명" required
+                    class="w-full bg-zinc-50 border-none rounded-2xl p-5 focus:ring-2 focus:ring-blue-600 outline-none text-sm font-bold">
+                <input type="tel" name="phone" placeholder="연락처 (010-0000-0000)" required
+                    class="w-full bg-zinc-50 border-none rounded-2xl p-5 focus:ring-2 focus:ring-blue-600 outline-none text-sm font-bold">
+                <select name="inquiry_type"
+                    class="w-full bg-zinc-50 border-none rounded-2xl p-5 focus:ring-2 focus:ring-blue-600 outline-none text-sm font-bold appearance-none cursor-pointer">
+                    <option value="개인 창업">개인 창업 (메뉴/레시피 니즈)</option>
+                    <option value="B2B 기업">B2B 기업 (전용 물류망 니즈)</option>
+                    <option value="단체 급식">단체 급식 / 위탁 운영</option>
+                    <option value="기타 제휴">기타 제휴</option>
+                </select>
+                <div class="p-4 bg-blue-50 rounded-2xl">
+                    <p class="text-[10px] text-blue-700 font-black mb-1 uppercase tracking-tighter">Information</p>
+                    <p class="text-xs text-blue-600 leading-snug">모든 거래는 투명한 <span class="font-bold underline">예치금
+                            시스템</span>으로 운영되며, 세금계산서는 출고일에 맞춰 자동 발행됩니다.</p>
+                </div>
+                <button type="submit"
+                    class="w-full bg-zinc-900 text-white py-5 rounded-3xl font-bold text-lg mt-4 shadow-xl hover:bg-black transition-all">파트너
+                    상담 신청하기</button>
+            </form>
         </div>
+    </div>
 
-        <!-- Modal 함수 (먼저 로드) -->
-        <script>
-            function openModal() {
-                const modal = document.getElementById('modal');
-                modal.classList.remove('hidden');
-                modal.classList.add('flex');
-                document.body.style.overflow = 'hidden';
-            }
+    <!-- Modal 함수 (먼저 로드) -->
+    <script>
+        function openModal() {
+            const modal = document.getElementById('modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
 
-            function closeModal() {
-                const modal = document.getElementById('modal');
-                modal.classList.add('hidden');
-                modal.classList.remove('flex');
-                document.body.style.overflow = 'auto';
-            }
-        </script>
-        <script type="module" src="main.js"></script>
+        function closeModal() {
+            const modal = document.getElementById('modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = 'auto';
+        }
+    </script>
+    <script type="module" src="main.js"></script>
 </body>
 
 </html>
